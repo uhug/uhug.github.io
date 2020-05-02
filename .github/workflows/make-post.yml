@@ -27,6 +27,15 @@ jobs:
     #     git clone https://github.com/DokySp/acmicpc-practice.git
     #     find ./acmicpc-practice | grep *.md > ./tools/list
 
+#     - name: Add & Commit Documents
+#       run: |
+#         git config --local user.email "uhug123@hanmail.net"
+#         git config --local user.name "uhug"
+#         git add .
+#         git commit -m "CI: Build posts into './_post' folder" -a
+
+
+
     - name: node setting
       run: |
         npm install
@@ -38,12 +47,12 @@ jobs:
     - name: Build Jekyll
       uses: jerryjvl/jekyll-build-action@v1
 
-    - name: Add & Commit files
+    - name: Add & Commit Build files
       run: |
         git config --local user.email "uhug123@hanmail.net"
         git config --local user.name "uhug"
         git add .
-        git commit -m "CI: Build posts into './_post' folder" -a
+        git commit -m "CI: Build Jekyll blog" -a
 
     - name: Push changes
       uses: ad-m/github-push-action@master
