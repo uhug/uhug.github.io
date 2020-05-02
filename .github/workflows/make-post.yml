@@ -63,22 +63,18 @@ jobs:
     - name: 🎩 Install bundler
       run: |
         sudo gem install bundler
-        rbenv rehash
         ruby -v
         echo "rbenv & bundler was installed"
     - name: 🎩 Install rails
       run: |
         sudo gem install sprockets -v 3.7.2
         curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-        sudo apt-get install -y nodejs
         sudo gem install rails -v 4.2.6
-        rbenv rehash
     - name: 🎩 Install Jekyll
       run: |
         gem install jekyll
         gem install github-pages
         gem install jekyll-sass-converter
-        rbenv rehash
         
 #     - name: 🧹 Clean site
 #       run: |
