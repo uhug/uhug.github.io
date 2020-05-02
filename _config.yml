@@ -21,7 +21,7 @@ description: > # this means to ignore newlines until "baseurl:"
   백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
-baseurl: "/docsy-jekyll" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
 url: "https://uhug.github.io" # the base hostname & protocol for your site
