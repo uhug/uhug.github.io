@@ -45,7 +45,7 @@
                         return
                     }
                     var query = $(this).val();
-                    var searchPage = "https://uhug.github.io/docsy-jekyll/search/?q=" + query;
+                    var searchPage = "https://uhug.github.io/search/?q=" + query;
                     document.location = searchPage;
                     return false;
                 });

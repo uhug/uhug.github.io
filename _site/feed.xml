@@ -4,10 +4,10 @@
     <title>Doky's 백준 위키</title>
     <description>백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
 </description>
-    <link>https://uhug.github.io/docsy-jekyll/</link>
-    <atom:link href="https://uhug.github.io/docsy-jekyll/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 May 2020 07:21:05 +0000</pubDate>
-    <lastBuildDate>Sat, 02 May 2020 07:21:05 +0000</lastBuildDate>
+    <link>https://uhug.github.io/</link>
+    <atom:link href="https://uhug.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 May 2020 07:34:30 +0000</pubDate>
+    <lastBuildDate>Sat, 02 May 2020 07:34:30 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -15,8 +15,8 @@
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Jun 2019 18:52:21 +0000</pubDate>
-        <link>https://uhug.github.io/docsy-jekyll/2019/hello-world/</link>
-        <guid isPermaLink="true">https://uhug.github.io/docsy-jekyll/2019/hello-world/</guid>
+        <link>https://uhug.github.io/2019/hello-world/</link>
+        <guid isPermaLink="true">https://uhug.github.io/2019/hello-world/</guid>
         
         
         <category>jekyll</category>
@@ -45,8 +45,8 @@
 
 </description>
         <pubDate>Fri, 28 Jun 2019 10:52:21 +0000</pubDate>
-        <link>https://uhug.github.io/docsy-jekyll/2019/welcome/</link>
-        <guid isPermaLink="true">https://uhug.github.io/docsy-jekyll/2019/welcome/</guid>
+        <link>https://uhug.github.io/2019/welcome/</link>
+        <guid isPermaLink="true">https://uhug.github.io/2019/welcome/</guid>
         
         
         <category>jekyll</category>
