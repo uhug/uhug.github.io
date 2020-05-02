@@ -25,7 +25,7 @@ jobs:
 #         git commit -m "CI: Build posts into './_post' folder" -a
 
 
-    - name: node setting
+    - name: Node setting
       run: |
         npm install
 
@@ -46,7 +46,9 @@ jobs:
         sudo gem install github-pages
 
     - name: Build blog 🔨
-      run: bundle exec jekyll build
+      run: |
+        rm -fr node_modules  # 빌드 시 충돌 방지
+        bundle exec jekyll build
       
     - name: Deploy build
       run: |
@@ -60,3 +62,12 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    
+    # https://github.com/marketplace/actions/telegram-notify
+    - name: Send Telegram Message
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          The ${{ github.event_name }} event triggered final step.
