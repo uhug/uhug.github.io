@@ -44,13 +44,10 @@ jobs:
     #   run: |
     #     node ./tools/makePost.js
 
-
-    - name: Build & Deploy to GitHub Pages
-      env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-      uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+    - name: Build Jekyll site.
+      uses: meitar/jekyll-builder-for-github-pages-action@master
+      with:
+        secret_gh_pages_api_token: ${{ secrets.GH_PAGES_TOKEN }}
 
 
 #     - name: Add & Commit Build files
