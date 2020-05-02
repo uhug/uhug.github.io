@@ -48,7 +48,7 @@ jobs:
       uses: actions/checkout@master
       with:
         fetch-depth: 1
-    - name: 🎩 Install Jekyll
+    - name: 🎩 Install rbenv & bundler
       run: |
         git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
         echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
@@ -59,19 +59,19 @@ jobs:
         rbenv rehash
         ruby -v
         echo "rbenv & bundler was installed"
-        
+    - name: 🎩 Install rails
+      run: |
         curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
         sudo apt-get install -y nodejs
         gem install rails -v 4.2.6
         rbenv rehash
-
+    - name: 🎩 Install Jekyll
+      run: |
         gem install jekyll
         gem install github-pages
         gem install jekyll-sass-converter
-
         rbenv rehash
         
-
 #     - name: 🧹 Clean site
 #       run: |
 #         if [ -d "docs" ]; then
