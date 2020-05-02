@@ -45,22 +45,12 @@ jobs:
     #     node ./tools/makePost.js
 
 
-    - name: Cache gems
-      uses: actions/cache@v1
-      with:
-        path: vendor/gems
-        key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-
-    - name: Test
-      uses: DavidS/jekyll-deploy@master
-      with:
-        build-only: true
-      env:
-        JEKYLL_ENV: production
-        GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+    - name: Build & Deploy to GitHub Pages
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+      uses: BryanSchuetz/jekyll-deploy-gh-pages@master
 
 
 #     - name: Add & Commit Build files
