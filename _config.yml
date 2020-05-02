@@ -14,29 +14,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Docsy Jekyll
-email: your-email@domain.com
-author: Dinosaur Avocado
+title: Doky's 백준 위키
+email: uhug@naver.com
+author: DokySp
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
 baseurl: "/docsy-jekyll" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://vsoch.github.io" # the base hostname & protocol for your site
+url: "https://uhug.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/vsoch/docsy-jekyll"
-github_user: "vsoch"
-github_repo: "docsy-jekyll"
+repo: "https://github.com/DokySp/acmicpc-practice"
+github_user: "DokySp"
+github_repo: "acmicpc-practice"
 
 # Optional
-twitter: vsoch
-linkedin: vsochat
-dockerhub: vanessa
+twitter: 
+linkedin: 
+dockerhub: 
 
 # Should there be feedback buttons at the bottom of pages?
 feedback: true
