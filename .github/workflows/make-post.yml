@@ -50,6 +50,8 @@ jobs:
         fetch-depth: 1
     - name: 🎩 Install bundler
       run: |
+        ls -la
+        git status
         sudo gem install jekyll-sass-converter
         sudo gem install bundler
         sudo gem install jekyll
@@ -63,9 +65,11 @@ jobs:
       run: |
         pwd
         ls -la
+        git status
         git config --local user.email "uhug123@hanmail.net"
         git config --local user.name "uhug"
         git add .
+        git status
         git commit -am "🧪 Deploy with ${GITHUB_WORKFLOW}"
 
 
