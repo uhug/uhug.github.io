@@ -48,10 +48,17 @@ jobs:
       uses: actions/checkout@master
       with:
         fetch-depth: 1
-#     - name: 🎩 Install Jekyll
-#       run: |
-#         sudo gem install bundler jekyll
-#         sudo bundle install
+    - name: 🎩 Install Jekyll
+      run: |
+        git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+        echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+        exec $SHELL
+        sudo rbenv install 2.3.1
+        rbenv global 2.3.1
+        sudo gem install bundler
+        rbenv rehash
+        ruby -v
+        echo "rbenv & bundler was installed"
 
 #     - name: 🧹 Clean site
 #       run: |
@@ -61,10 +68,11 @@ jobs:
 
     - name: 🔨 Build site
       run: bundle exec jekyll build
+      
     - name: 🧪 Deploy build
       run: |
-        git config user.name "${GITHUB_ACTOR}"
-        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git config --local user.email "uhug123@hanmail.net"
+        git config --local user.name "uhug"
         git add .
         git commit -am "🧪 Deploy with ${GITHUB_WORKFLOW}"
 
