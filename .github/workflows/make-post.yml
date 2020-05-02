@@ -53,7 +53,33 @@ jobs:
           ${{ runner.os }}-gems-
 
     - name: Build Jekyll
-      uses: jerryjvl/jekyll-build-action@v1
+      run: |
+        apt-get update && apt-get install -y git
+        git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+        echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+        exec $SHELL
+        rbenv install 2.3.1
+        rbenv global 2.3.1
+        gem install bundler
+        rbenv rehash
+        ruby -v
+
+        # Rails
+        curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+        sudo apt-get install -y nodejs
+        gem install rails -v 4.2.6
+        rbenv rehash
+
+        # Jekyll
+        gem install jekyll
+        gem install github-pages
+        gem install jekyll-sass-converter
+
+        rbenv rehash
+        
+        jekyll serve
+        
+        
 
     - name: Add & Commit Build files
       run: |
