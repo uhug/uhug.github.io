@@ -48,10 +48,12 @@ jobs:
       uses: actions/checkout@master
       with:
         fetch-depth: 1
-    - name: 🎩 Install bundler
+    - name: Check Status
       run: |
         ls -la
         git status
+    - name: 🎩 Install bundler
+      run: |
         sudo gem install jekyll-sass-converter
         sudo gem install bundler
         sudo gem install jekyll
