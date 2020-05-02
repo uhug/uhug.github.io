@@ -44,6 +44,7 @@ jobs:
     #   run: |
     #     node ./tools/makePost.js
 
+
     - name: Bundler Cache
       uses: actions/cache@v1
       with:
@@ -51,35 +52,13 @@ jobs:
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
           ${{ runner.os }}-gems-
+    - name: Build & Deploy to GitHub Pages
+      uses: joshlarsen/jekyll4-deploy-gh-pages@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
 
-    - name: Build Jekyll
-      run: |
-        apt-get update && apt-get install -y git
-        git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-        echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-        exec $SHELL
-        rbenv install 2.3.1
-        rbenv global 2.3.1
-        gem install bundler
-        rbenv rehash
-        ruby -v
-
-        # Rails
-        curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-        sudo apt-get install -y nodejs
-        gem install rails -v 4.2.6
-        rbenv rehash
-
-        # Jekyll
-        gem install jekyll
-        gem install github-pages
-        gem install jekyll-sass-converter
-
-        rbenv rehash
-        
-        jekyll serve
-        
-        
 
     - name: Add & Commit Build files
       run: |
