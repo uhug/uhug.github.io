@@ -36,13 +36,21 @@ jobs:
 
 
 
-    - name: node setting
-      run: |
-        npm install
+#     - name: node setting
+#       run: |
+#         npm install
 
     # - name: run script
     #   run: |
     #     node ./tools/makePost.js
+
+    - name: Bundler Cache
+      uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
 
     - name: Build Jekyll
       uses: jerryjvl/jekyll-build-action@v1
