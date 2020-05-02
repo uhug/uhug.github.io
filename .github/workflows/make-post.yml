@@ -50,16 +50,15 @@ jobs:
         fetch-depth: 1
     - name: 🎩 Install rbenv 1
       run: | 
-        sudo apt-get install ruby-full
         git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
     - name: 🎩 Install rbenv 2
       run: echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
     - name: 🎩 Install rbenv 3
       run: exec $SHELL
     - name: 🎩 Install rbenv 4
-      run: rbenv install 2.3.1
+      run: sudo rbenv install 2.3.1
     - name: 🎩 Install rbenv 5
-      run: rbenv global 2.3.1
+      run: sudo rbenv global 2.3.1
         
     - name: 🎩 Install bundler
       run: |
