@@ -55,7 +55,7 @@ jobs:
         exec $SHELL
         rbenv install 2.3.1
         rbenv global 2.3.1
-        gem install bundler
+        sudo gem install bundler
         rbenv rehash
         ruby -v
         echo "rbenv & bundler was installed"
@@ -63,7 +63,7 @@ jobs:
       run: |
         curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
         sudo apt-get install -y nodejs
-        gem install rails -v 4.2.6
+        sudo gem install rails -v 4.2.6
         rbenv rehash
     - name: 🎩 Install Jekyll
       run: |
