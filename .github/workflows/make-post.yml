@@ -48,13 +48,19 @@ jobs:
       uses: actions/checkout@master
       with:
         fetch-depth: 1
-    - name: 🎩 Install rbenv & bundler
+    - name: 🎩 Install rbenv 1
+      run: git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+    - name: 🎩 Install rbenv 2
+      run: echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+    - name: 🎩 Install rbenv 3
+      run: exec $SHELL
+    - name: 🎩 Install rbenv 4
+      run: rbenv install 2.3.1
+    - name: 🎩 Install rbenv 5
+      run: rbenv global 2.3.1
+        
+    - name: 🎩 Install bundler
       run: |
-        git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-        echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-        exec $SHELL
-        rbenv install 2.3.1
-        rbenv global 2.3.1
         sudo gem install bundler
         rbenv rehash
         ruby -v
