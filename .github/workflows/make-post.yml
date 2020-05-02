@@ -48,33 +48,12 @@ jobs:
       uses: actions/checkout@master
       with:
         fetch-depth: 1
-#     - name: 🎩 Install rbenv 1
-#       run: | 
-#         git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-#     - name: 🎩 Install rbenv 2
-#       run: echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-#     - name: 🎩 Install rbenv 3
-#       run: exec $SHELL
-#     - name: 🎩 Install rbenv 4
-#       run: sudo rbenv install 2.3.1
-#     - name: 🎩 Install rbenv 5
-#       run: sudo rbenv global 2.3.1
-        
     - name: 🎩 Install bundler
       run: |
         sudo gem install bundler
-        ruby -v
-        echo "rbenv & bundler was installed"
-    - name: 🎩 Install rails
-      run: |
-        sudo gem install sprockets -v 3.7.2
-        curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-        sudo gem install rails -v 4.2.6
-    - name: 🎩 Install Jekyll
-      run: |
-        gem install jekyll
-        gem install github-pages
-        gem install jekyll-sass-converter
+        sudo gem install jekyll
+        sudo gem install github-pages
+        sudo gem install jekyll-sass-converter
         
 #     - name: 🧹 Clean site
 #       run: |
