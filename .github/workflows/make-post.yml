@@ -44,10 +44,27 @@ jobs:
     #   run: |
     #     node ./tools/makePost.js
 
-    - name: Build Jekyll site.
-      uses: meitar/jekyll-builder-for-github-pages-action@master
+    - name: 🛎 Check out master
+      uses: actions/checkout@master
       with:
-        secret_gh_pages_api_token: ${{ secrets.GH_PAGES_TOKEN }}
+        fetch-depth: 1
+    - name: 🎩 Install Jekyll
+      run: |
+        sudo gem install bundler jekyll
+        sudo bundle install
+#     - name: 🧹 Clean site
+#       run: |
+#         if [ -d "docs" ]; then
+#           rm -rf docs/*
+#         fi
+    - name: 🔨 Build site
+      run: bundle exec jekyll build
+    - name: 🧪 Deploy build
+      run: |
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git add .
+        git commit -am "🧪 Deploy with ${GITHUB_WORKFLOW}"
 
 
 #     - name: Add & Commit Build files
