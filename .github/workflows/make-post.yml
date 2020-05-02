@@ -45,29 +45,32 @@ jobs:
     #     node ./tools/makePost.js
 
 
-    - name: Bundler Cache
+    - name: Cache gems
       uses: actions/cache@v1
       with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        path: vendor/gems
+        key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
-          ${{ runner.os }}-gems-
-    - name: Build & Deploy to GitHub Pages
-      uses: joshlarsen/jekyll4-deploy-gh-pages@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
 
-
-    - name: Add & Commit Build files
-      run: |
-        git config --local user.email "uhug123@hanmail.net"
-        git config --local user.name "uhug"
-        git add .
-        git commit -m "CI: Build Jekyll blog" -a
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: Test
+      uses: DavidS/jekyll-deploy@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        build-only: true
+      env:
+        JEKYLL_ENV: production
+        GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+
+
+#     - name: Add & Commit Build files
+#       run: |
+#         git config --local user.email "uhug123@hanmail.net"
+#         git config --local user.name "uhug"
+#         git add .
+#         git commit -m "CI: Build Jekyll blog" -a
+
+#     - name: Push changes
+#       uses: ad-m/github-push-action@master
+#       with:
+#         github_token: ${{ secrets.GITHUB_TOKEN }}
