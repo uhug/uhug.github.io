@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docsy Jekyll</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Doky's 백준 위키</title>
+    <description>백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
 </description>
-    <link>https://vsoch.github.io/docsy-jekyll/</link>
-    <atom:link href="https://vsoch.github.io/docsy-jekyll/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 May 2020 06:58:08 +0000</pubDate>
-    <lastBuildDate>Sat, 02 May 2020 06:58:08 +0000</lastBuildDate>
+    <link>https://uhug.github.io/docsy-jekyll/</link>
+    <atom:link href="https://uhug.github.io/docsy-jekyll/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 May 2020 07:16:35 +0000</pubDate>
+    <lastBuildDate>Sat, 02 May 2020 07:16:35 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -15,8 +15,8 @@
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Jun 2019 18:52:21 +0000</pubDate>
-        <link>https://vsoch.github.io/docsy-jekyll/2019/hello-world/</link>
-        <guid isPermaLink="true">https://vsoch.github.io/docsy-jekyll/2019/hello-world/</guid>
+        <link>https://uhug.github.io/docsy-jekyll/2019/hello-world/</link>
+        <guid isPermaLink="true">https://uhug.github.io/docsy-jekyll/2019/hello-world/</guid>
         
         
         <category>jekyll</category>
@@ -45,8 +45,8 @@
 
 </description>
         <pubDate>Fri, 28 Jun 2019 10:52:21 +0000</pubDate>
-        <link>https://vsoch.github.io/docsy-jekyll/2019/welcome/</link>
-        <guid isPermaLink="true">https://vsoch.github.io/docsy-jekyll/2019/welcome/</guid>
+        <link>https://uhug.github.io/docsy-jekyll/2019/welcome/</link>
+        <guid isPermaLink="true">https://uhug.github.io/docsy-jekyll/2019/welcome/</guid>
         
         
         <category>jekyll</category>
