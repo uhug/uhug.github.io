@@ -54,18 +54,15 @@ jobs:
         sudo gem install bundler
         sudo gem install jekyll
         sudo gem install github-pages
-        
-#     - name: 🧹 Clean site
-#       run: |
-#         if [ -d "docs" ]; then
-#           rm -rf docs/*
-#         fi
+
 
     - name: 🔨 Build site
       run: bundle exec jekyll build
       
     - name: 🧪 Deploy build
       run: |
+        pwd
+        ls -la
         git config --local user.email "uhug123@hanmail.net"
         git config --local user.name "uhug"
         git add .
