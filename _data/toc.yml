@@ -10,6 +10,9 @@
           url: "docs/getting-started#development"
         - title: Customization
           url: "docs/getting-started#customization"
+          children:
+          - title: Features
+            url: "docs/getting-started#getting-started"
     - title: "Extras"
       url: "docs/extras"
       children:
