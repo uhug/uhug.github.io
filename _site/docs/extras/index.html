@@ -53,19 +53,21 @@
 	</a>
 	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
 		<ul class="navbar-nav mt-2 mt-lg-0">
+      <!-- 굳이 레포를 보여줄 필요가 없어 삭제 -->
+      <!-- 
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
-                            <a class="nav-link" href="https://github.com/dokysp/acmicpc-practice" target="_blank"><span>문제풀이 보기</span></a>
+                            <a class="nav-link" href="https://github.com/dokysp/acmicpc-practice" target="_blank"><span>Repo</span></a>
 			</li>
+       -->
+      
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
                             <a class="nav-link" href="/about" ><span>About</span></a>
 			</li>
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-                            <a class="nav-link" href="/docs" ><span>Documentation</span></a>
-			</li>
+      
 		</ul>
 	</div>
 	<div class="navbar-nav d-none d-lg-block">
- <input type="search" class="form-control td-search-input" placeholder="&#xf002 dl 문제번호 검색하기…" aria-label="문제번호 검색하기…" autocomplete="off">
+ <input type="search" class="form-control td-search-input" placeholder="&#xf002 문제번호 검색하기…" aria-label="문제번호 검색하기…" autocomplete="off">
         </div>
 
 	<div class="navbar-nav d-none d-lg-block">
@@ -104,29 +106,33 @@ $(document).ready(function() {
           <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
           <div id="td-sidebar-menu" class="td-sidebar__inner">  
   <form class="td-sidebar__search d-flex align-items-center">
- <input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+ <input type="search" class="form-control td-search-input" placeholder="&#xf002 문제번호 검색…" aria-label="문제번호 검색…" autocomplete="off">
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>  
   <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Documentation</a>
+    <a  href="/problems" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">문제풀이</a>
   </li><ul>
-    <li class="collapse show" id="documentation">
+    <li class="collapse show" id="문제풀이">
         <ul class="td-sidebar-nav__section pr-md-3">
           <li class="td-sidebar-nav__section-title">
             <a href="/docs/getting-started" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Getting Started</a>
           </li>
           <ul><li class="collapse show" id="">
-              <a class="td-sidebar-link td-sidebar-link__page " id="m-documentation-getting-started-features" href="/docs/getting-started#getting-started">Features</a><a class="td-sidebar-link td-sidebar-link__page " id="m-documentation-getting-started-development" href="/docs/getting-started#development">Development</a><a class="td-sidebar-link td-sidebar-link__page " id="m-documentation-getting-started-customization" href="/docs/getting-started#customization">Customization</a>
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-문제풀이-getting-started-features" href="/docs/getting-started#getting-started">Features</a><a class="td-sidebar-link td-sidebar-link__page " id="m-문제풀이-getting-started-development" href="/docs/getting-started#development">Development</a><a class="td-sidebar-link td-sidebar-link__page " id="m-문제풀이-getting-started-customization" href="/docs/getting-started#customization">Customization</a>
               </li></ul>
           <li class="td-sidebar-nav__section-title">
             <a href="/docs/extras" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Extras</a>
           </li>
           <ul><li class="collapse show" id="">
-              <a class="td-sidebar-link td-sidebar-link__page " id="m-documentation-extras-quizzes" href="/docs/extras/example-quiz">Quizzes</a><a class="td-sidebar-link td-sidebar-link__page " id="m-documentation-extras-tags-page" href="/tags">Tags Page</a>
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-문제풀이-extras-quizzes" href="/docs/extras/example-quiz">Quizzes</a>
               </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/tags" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tags</a>
+          </li>
+          <ul><li class="collapse show" id=""></li></ul>
           <li class="td-sidebar-nav__section-title">
             <a href="/about" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">About</a>
           </li>
@@ -144,8 +150,8 @@ $(document).ready(function() {
               <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
                   <!-- 페이지 수정 기능이 별 의미가 없으므로 주석처리 -->
 <!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/extras/index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
-<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/extras/index.md" target="_blank"><i class="fab fa-github fa-fw"></i> 이 문서에 이슈 생성하기</a>
-<a href="https://github.com/dokysp/acmicpc-practice/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 프로젝트에 대한 이슈 생성하기</a>
+<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/extras/index.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
+<a href="https://github.com/dokysp/acmicpc-practice/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 프로젝트 의견 달기</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
      the post frontend matter, and refer to the label to open the issue for -->
@@ -248,16 +254,20 @@ $('h1').first().append('<div><span style="font-size:12px" class="badge badge-pri
     display: block;
   }
 </style>
+<hr>
 <h5 class="feedback--title">Feedback</h5>
 <p class="feedback--question">본 정보가 도움이 되셨나요?</p>
-<button class="feedback--answer feedback--answer-yes">🙂</button>
-<button class="feedback--answer feedback--answer-no">☹️</button>
+<button class="btn btn-success feedback--answer feedback--answer-yes">🙂</button>
+<button class="btn btn-danger feedback--answer feedback--answer-no">☹️</button>
 <p class="feedback--response feedback--response-yes">
-  피드백 감사합니다! <a href="https://github.com/dokysp/acmicpc-practice/issues/new">혹시 이 글에 대한 더 좋은 아이디어가 있다면 여기에 의견을 남겨주세요!</a>.
+  피드백 감사합니다!<br>이 글에 대한 더 좋은 아이디어가 있다면 <a href="https://github.com/dokysp/acmicpc-practice/issues/new">여기에 의견을 남겨주세요!</a>.
 </p>
 <p class="feedback--response feedback--response-no">
   피드백 감사합니다!<br>혹시 잘못된 내용 혹은 오타가 있다면, <a href="https://github.com/dokysp/acmicpc-practice/issues/new">의견을 남겨주세요!</a>.
 </p>
+
+<div><b>댓글 기능 추가 예정</b></div>
+
 <script>
   const yesButton = document.querySelector('.feedback--answer-yes');
   const noButton = document.querySelector('.feedback--answer-no');
