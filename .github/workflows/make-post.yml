@@ -76,7 +76,8 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          ${{ needs.build.result }} ➡️ ${{github.event.head_commit.message}}
+          빌드 성공
+          ${{github.event.head_commit.message}}
 
     - name: Send Failure Telegram Message
       if: needs.build.result != 'success'
@@ -85,4 +86,5 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          ${{ needs.build.result }} ➡️ ${{github.event.head_commit.message}}
+          빌드 실패
+          ${{github.event.head_commit.message}}
