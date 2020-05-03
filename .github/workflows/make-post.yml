@@ -24,7 +24,6 @@ jobs:
 #         git add .
 #         git commit -m "CI: Build posts into './_post' folder" -a
 
-
     - name: Node setting
       run: |
         npm install
