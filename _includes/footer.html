@@ -4,34 +4,30 @@
       <div class="col-6 col-sm-4 text-xs-center order-sm-2">
 
 <!-- 아이콘은 https://fontawesome.com/ 에서 따옴 -->
-{% if site.twitter %}
+
 <ul class="list-inline mb-0">  
+  {% if site.twitter %}
   <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="" aria-label="Twitter" data-original-title="Twitter">
     <a class="text-white" target="_blank" href="https://twitter.com/{{ site.twitter }}">
       <i class="fab fa-twitter"></i>
     </a>
   </li>
-</ul>
-{% endif %}
-{% if site.facebook %}
-<ul class="list-inline mb-0">  
+  {% endif %}
+  {% if site.facebook %}
   <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="" aria-label="Facebook" data-original-title="Facebook">
-    <a class="text-white" target="_blank" href="https://fb.com/{{ site.facebook }}">
-      <i class="fab fa-facebook"></i>
-    </a>
+      <a class="text-white" target="_blank" href="https://fb.com/{{ site.facebook }}">
+        <i class="fab fa-facebook"></i>
+      </a>
   </li>
-</ul>
-{% endif %}
-{% if site.website %}
-<ul class="list-inline mb-0">  
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="" aria-label="Website" data-original-title="Website">
-    <a class="text-white" target="_blank" href="{{ site.website }}">
-      <i class="fab fa-globe"></i>
-    </a>
+  {% endif %}
+  {% if site.website %}
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="" aria-label="Blog" data-original-title="Blog">
+      <a class="text-white" target="_blank" href="{{ site.website }}">
+        <i class="fab fa-globe"></i>
+      </a>
   </li>
+  {% endif %}
 </ul>
-{% endif %}
-
 
 
 </div>
