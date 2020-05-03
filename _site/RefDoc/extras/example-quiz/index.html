@@ -20,22 +20,19 @@
 <link rel="icon" type="image/png" href="/assets/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/assets/favicons/android-192x192.png"sizes="192x192">
 
-<title>News</title>
-<meta property="og:title" content="News" />
-<meta property="og:description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
-" />
+<title>Quiz</title>
+<meta property="og:title" content="Quiz" />
+<meta property="og:description" content="How to add interactive quizzes to your site." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://uhug.github.io" />
 <meta property="og:site_name" content="https://uhug.github.io" />
 
-<meta itemprop="name" content="News">
-<meta itemprop="description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
-">
+<meta itemprop="name" content="Quiz">
+<meta itemprop="description" content="How to add interactive quizzes to your site.">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="News"/>
-<meta name="twitter:description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
-"/>
+<meta name="twitter:title" content="Quiz"/>
+<meta name="twitter:description" content="How to add interactive quizzes to your site."/>
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/palette.css">
@@ -151,8 +148,8 @@
         <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
           <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
             <!-- 페이지 수정 기능이 별 의미가 없으므로 주석처리 -->
-<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/pages/news.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
-<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/pages/news.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
+<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/RefDoc/extras/example-quiz.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
+<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/RefDoc/extras/example-quiz.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
 <a href="https://github.com/dokysp/acmicpc-practice/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 프로젝트 의견 달기</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
@@ -174,41 +171,83 @@
           <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
             <ol class="breadcrumb spb-1">
               <li class="breadcrumb-item active" aria-current="page">
-                <a href="https://uhug.github.io/news/">News</a>
+                <a href="https://uhug.github.io/RefDoc/extras/example-quiz/">Quiz</a>
               </li>
             </ol>
           </nav> -->
           <div class="td-content">
-            <h1 id="news">News</h1>
+            <h1 id="quizzes">Quizzes</h1>
 
-<p><a href="/feed.xml">RSS</a>를 구독하시면 최신 정보를 빠르게 받아보실 수 있습니다.</p>
+<p>As of version 0.0.12, mkdocs-jekyll has support for basic quizzes! These are
+intended to help educate your users about the content of your documentation.
+For a quiz, you can add a new file to the folder <code class="language-plaintext highlighter-rouge">_data/quizzes</code>, and write a 
+questions file based on the format shown in <code class="language-plaintext highlighter-rouge">_data/quizzes/example-quiz.yml</code>.
+Here is a simple example of a multiple choice question (which can also serve as 
+True/False):</p>
 
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">This is the Quiz Title</span>
+<span class="na">randomized</span><span class="pi">:</span> <span class="no">false</span>
+<span class="na">questions</span><span class="pi">:</span>
+
+ <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">multiple-choice"</span>
+   <span class="na">question</span><span class="pi">:</span> <span class="s2">"</span><span class="s">True</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">False,</span><span class="nv"> </span><span class="s">Pittsburgh</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">West</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">Philadelphia"</span>
+   <span class="na">items</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">choice</span><span class="pi">:</span> <span class="s">True</span>
+      <span class="na">correct</span><span class="pi">:</span> <span class="no">true</span>
+    <span class="pi">-</span> <span class="na">choice</span><span class="pi">:</span> <span class="s">False</span>
+      <span class="na">correct</span><span class="pi">:</span> <span class="no">false</span>
+   <span class="na">followup</span><span class="pi">:</span> <span class="pi">|</span> 
+      <span class="s">The answer is True! Pittsburgh is 304.9 miles West of </span>
+      <span class="s">Philadelphia, or approximately a car ride of </span>
+      <span class="s">4 hours and 52 minutes. Buckle up!</span>
+</code></pre></div></div>
+
+<p>The quiz is rendered with a “Show Answer” button below each question, and when
+the user clicks it, any questions that are flagged with <code class="language-plaintext highlighter-rouge">correct: true</code> will be 
+bolded, and if a followup section is included, it will be displayed.
+See the live example at the end of this page.</p>
+
+<h2 id="options">Options</h2>
+
+<h4 id="title">Title</h4>
+
+<p>If you include a title, it will be rendered at the top of the quiz. This is
+optional - you can leave it out and add it before the include on the page.</p>
+
+<h4 id="random">Random</h4>
+
+<p>If you want your questions to be presented randomly, just add randomized: true
+to the data.</p>
+
+<h2 id="example-quiz">Example Quiz</h2>
+
+<p>If I want to include the quiz located at <code class="language-plaintext highlighter-rouge">_data/quizzes/example-quiz.yml</code>, I 
+can do so like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include quiz.html file='example-quiz' %}
+</code></pre></div></div>
+
+<p>The rendered quiz is shown here:</p>
+
+<h2>퀴즈 예시</h2>
+<div class="admonition question">
+<p class="admonition-title">가장 좋아하는 색은 무엇인가요?</p>
+<p>1. 빨간색<br />2. 파란색<br />3. 초록색<br /></p>
+</div>
+<p><button class="btn btn-success" onclick="$(&quot;.correct-1&quot;).css(&quot;font-weight&quot;, 600);$(&quot;.correct-more-1&quot;).css(&quot;display&quot;, &quot;inline&quot;)">Show Answer</button></p>
+<p class="well correct-more-1" style="display:none">사실 물어보는 것이 의미가 없는 정답이겠죠?</p>
+<p><br /></p>
+<div class="admonition question">
+<p class="admonition-title">서울은 대한민국의 수도인가요?</p>
+<p><span class="correct-2">1. 수도이다.</span><br />2. 아니다.<br /></p>
+</div>
+<p><button class="btn btn-success" onclick="$(&quot;.correct-2&quot;).css(&quot;font-weight&quot;, 600);$(&quot;.correct-more-2&quot;).css(&quot;display&quot;, &quot;inline&quot;)">Show Answer</button></p>
+<p class="well correct-more-2" style="display:none">서울은 대한민국의 수도가 맞습니다!
+수도가 서울이라는 내용이 대한민국의 헌법에 명시가 되어있지는 않지만,
+대한민국 국민들에게 관습적으로 수도로써 통용되고 있습니다.
+</p>
 <p><br /></p>
 
-<div class="post-preview">
-   <h2><a href="/2019/hello-world/">Two Thousand Nineteen</a></h2>
-   <span class="post-date">June 28, 2019</span><br />
-   <span class="badge badge-warning">warning-badge</span><span class="badge badge-danger">danger-badge</span>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-   
-   </div>
-<hr />
-
-<div class="post-preview">
-   <h2><a href="/2019/welcome/">Welcome to MkDocs Jekyll</a></h2>
-   <span class="post-date">June 28, 2019</span><br />
-   <span class="badge badge-primary">primary-badge</span><span class="badge badge-secondary">secondary-badge</span><span class="badge badge-info">info-badge</span><span class="badge badge-success">success-badge</span>
-   <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-
-   
-      <a href="/2019/welcome/">read more</a>
-   
-   </div>
-<hr />
-
-<p>더 많은 정보를 <a href="/archive/">아카이브</a>에서 확인해보세요.</p>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
