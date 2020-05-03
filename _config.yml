@@ -27,12 +27,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://uhug.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/DokySp/acmicpc-practice"
+repo: "https://github.com/uhug/uhug.github.io"
 github_user: "uhug"
 github_repo: "uhug.github.io"
 
 # Optional
-twitter: uhug
+facebook: dokysp
 linkedin: 
 dockerhub: 
 
