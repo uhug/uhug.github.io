@@ -1,25 +1,27 @@
-title: This is the Quiz Title
+title: 퀴즈 예시
 randomized: false
 questions:
 
  - type: "multiple-choice"
-   question: "What is your favorite color?"
+   question: "가장 좋아하는 색은 무엇인가요?"
    items:
-    - choice: Red
+    - choice: 빨간색
       correct: null
-    - choice: Blue
+    - choice: 파란색
       correct: null
-    - choice: Green
+    - choice: 초록색
       correct: null
-   followup: There is no correct answer to asking your favorite color! All choices would be good.
+   followup: 사실 물어보는 것이 의미가 없는 정답이겠죠?
 
  - type: "multiple-choice"
-   question: "True or False, Pittsburgh is West of Philadelphia"
+   question: "서울은 대한민국의 수도인가요?"
    items:
-    - choice: True
+    - choice: 수도이다.
       correct: true
-    - choice: False
+    - choice: 아니다.
       correct: false
    followup: | 
-      The answer is True! Pittsburgh is 304.9 miles West of Philadelphia, or approximately 
-      a car ride of 4 hours and 52 minutes. Buckle up!
+      서울은 대한민국의 수도가 맞습니다!
+      수도가 서울이라는 내용이 대한민국의 헌법에 명시가 되어있지는 않지만,
+      대한민국 국민들에게 관습적으로 수도로써 통용되고 있습니다.
+
