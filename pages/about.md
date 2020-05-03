@@ -14,3 +14,5 @@ permalink: /about/
 ## Support
 만약, 본 블로그에 대한 질문 혹은 잘못된 정보 수정을 원하시는 분들은 [여기](https://www.github.com/{{ site.github_repo }}/{{ site.github_user }})를 통해 이슈를 남겨주시기 바랍니다.
 
+## 저작권
+본 위키가 기반하고 있는 레포지토리는 MIT Licence를 기반으로 하고 있습니다.

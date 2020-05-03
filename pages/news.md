@@ -5,8 +5,7 @@ permalink: /news/
 
 # News
 
-<p>Subscribe with <a href="{{ site.baseurl }}/feed.xml">RSS</a> to keep up with the latest news.
-For site changes, see the <a href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}/blob/master/CHANGELOG.md">changelog</a> kept with the code base.</p>
+<p><a href="{{ site.baseurl }}/feed.xml">RSS</a>를 구독하시면 최신 정보를 빠르게 받아보실 수 있습니다.</p>p>
 
 <br>
 
@@ -23,4 +22,4 @@ For site changes, see the <a href="https://github.com/{{ site.github_user }}/{{ 
    <hr>
 {% endfor %}
 
-Want to see more? See the <a href="{{ site.baseurl }}/archive/">News Archive</a>.
+더 많은 정보를 <a href="{{ site.baseurl }}/archive/">아카이브</a>에서 확인해보세요.

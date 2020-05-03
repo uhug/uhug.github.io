@@ -1,13 +1,12 @@
 ---
 layout: page
 title: Documentation
-permalink: /docs/
+permalink: /problems/
 ---
 
-# Documentation
+# 문제풀이
 
-Welcome to the {{ site.title }} Documentation pages! Here you can quickly jump to a 
-particular page.
+문제분류별 문제번호
 
 <div class="section-index">
     <hr class="panel-line">
