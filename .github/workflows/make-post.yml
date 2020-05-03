@@ -64,7 +64,7 @@ jobs:
   
 
   send_telegram_message:
-    needs: build
+    # needs: build
     runs-on: ubuntu-latest
     steps:
     # https://github.com/marketplace/actions/telegram-notify
@@ -75,7 +75,7 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          빌드 성공
+          ✅ 빌드 성공
           "#${{github.run_number}}: ${{github.event.head_commit.message}}"
 
     - name: Send Failure Telegram Message
@@ -85,6 +85,6 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          빌드 실패
+          ❌ 빌드 실패
           "#${{github.run_number}}: ${{github.event.head_commit.message}}"
           https://github.com/uhug/uhug.github.io/actions
