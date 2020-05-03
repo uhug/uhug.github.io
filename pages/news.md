@@ -5,7 +5,7 @@ permalink: /news/
 
 # News
 
-<p><a href="{{ site.baseurl }}/feed.xml">RSS</a>를 구독하시면 최신 정보를 빠르게 받아보실 수 있습니다.</p>p>
+<p><a href="{{ site.baseurl }}/feed.xml">RSS</a>를 구독하시면 최신 정보를 빠르게 받아보실 수 있습니다.</p>
 
 <br>
 
