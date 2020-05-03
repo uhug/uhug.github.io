@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Docsy Jekyll Theme
+title: Doky의 백준 문제풀이
 permalink: /
 ---
 
