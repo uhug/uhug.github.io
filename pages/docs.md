@@ -11,7 +11,7 @@ permalink: /problems/
 <div class="section-index">
     <hr class="panel-line">
     {% for post in site.docs  %}        
-    <font style="font-size: 15px;"><b><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></b></font>
+    <font style="font-size: 15px;"><b><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></b></font><br>
     {% endfor %}
     <!-- {% for post in site.docs  %}        
     <div class="entry">
