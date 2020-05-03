@@ -6,8 +6,8 @@
 </description>
     <link>https://uhug.github.io/</link>
     <atom:link href="https://uhug.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 May 2020 10:17:35 +0000</pubDate>
-    <lastBuildDate>Sun, 03 May 2020 10:17:35 +0000</lastBuildDate>
+    <pubDate>Sun, 03 May 2020 10:27:41 +0000</pubDate>
+    <lastBuildDate>Sun, 03 May 2020 10:27:41 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -17,8 +17,6 @@
         <pubDate>Fri, 28 Jun 2019 18:52:21 +0000</pubDate>
         <link>https://uhug.github.io/2019/hello-world/</link>
         <guid isPermaLink="true">https://uhug.github.io/2019/hello-world/</guid>
-        
-        <category>구현</category>
         
         
         <category>jekyll</category>
@@ -49,8 +47,6 @@
         <pubDate>Fri, 28 Jun 2019 10:52:21 +0000</pubDate>
         <link>https://uhug.github.io/2019/welcome/</link>
         <guid isPermaLink="true">https://uhug.github.io/2019/welcome/</guid>
-        
-        <category>test</category>
         
         
         <category>jekyll</category>
