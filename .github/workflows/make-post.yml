@@ -40,12 +40,12 @@ jobs:
 #       with:
 #         fetch-depth: 1
 
-    # - name: Install Jekyll
-    #   run: |
-    #     sudo gem install jekyll-sass-converter
-    #     sudo gem install bundler
-    #     sudo gem install jekyll
-    #     sudo gem install github-pages
+    - name: Install Jekyll
+      run: |
+        sudo gem install jekyll-sass-converter
+        sudo gem install bundler
+        sudo gem install jekyll
+        sudo gem install github-pages
 
     - name: Build blog 🔨
       
