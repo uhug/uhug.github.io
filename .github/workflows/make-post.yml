@@ -8,6 +8,9 @@ on:
 
 jobs:
   build:
+    continue-on-error: true
+    strategy:
+      fail-fast: false
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -37,19 +40,19 @@ jobs:
 #       with:
 #         fetch-depth: 1
 
-    - name: Install Jekyll
-      run: |
-        sudo gem install jekyll-sass-converter
-        sudo gem install bundler
-        sudo gem install jekyll
-        sudo gem install github-pages
+    # - name: Install Jekyll
+    #   run: |
+    #     sudo gem install jekyll-sass-converter
+    #     sudo gem install bundler
+    #     sudo gem install jekyll
+    #     sudo gem install github-pages
 
     - name: Build blog 🔨
+      
       run: |
         rm -fr node_modules  # 빌드 시 충돌 방지
-        rm -fr RefDoc  # 빌드 시 충돌 방지
         bundle exec jekyll build
-      
+
     - name: Deploy build
       run: |
         git config --local user.email "uhug123@hanmail.net"
@@ -62,11 +65,10 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-  
 
-  send_telegram_message:
-    # needs: build
+  send-telegram-message:
     runs-on: ubuntu-latest
+    needs: build
     steps:
     # https://github.com/marketplace/actions/telegram-notify
     - name: Send Success Telegram Message
@@ -79,6 +81,7 @@ jobs:
           ✅ 빌드 성공
           "#${{github.run_number}}: ${{github.event.head_commit.message}}"
 
+    # 이전 스탭에서 빌드 실패한 것을 알 수 있는 방법을 알면 좋으련만... > fail-fast / continue-on-error
     - name: Send Failure Telegram Message
       if: needs.build.result != 'success'
       uses: appleboy/telegram-action@master

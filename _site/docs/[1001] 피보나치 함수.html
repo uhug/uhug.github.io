@@ -20,19 +20,22 @@
 <link rel="icon" type="image/png" href="/assets/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/assets/favicons/android-192x192.png"sizes="192x192">
 
-<title>Extras</title>
-<meta property="og:title" content="Extras" />
-<meta property="og:description" content="Extras, including quizzes." />
+<title>[1001] 피보나치 함수</title>
+<meta property="og:title" content="[1001] 피보나치 함수" />
+<meta property="og:description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
+" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://uhug.github.io" />
 <meta property="og:site_name" content="https://uhug.github.io" />
 
-<meta itemprop="name" content="Extras">
-<meta itemprop="description" content="Extras, including quizzes.">
+<meta itemprop="name" content="[1001] 피보나치 함수">
+<meta itemprop="description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
+">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Extras"/>
-<meta name="twitter:description" content="Extras, including quizzes."/>
+<meta name="twitter:title" content="[1001] 피보나치 함수"/>
+<meta name="twitter:description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
+"/>
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/palette.css">
@@ -148,8 +151,8 @@
         <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
           <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
             <!-- 페이지 수정 기능이 별 의미가 없으므로 주석처리 -->
-<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/RefDoc/extras/index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
-<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/RefDoc/extras/index.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
+<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/[1001] 피보나치 함수.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
+<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/[1001] 피보나치 함수.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
 <a href="https://github.com/dokysp/acmicpc-practice/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 프로젝트 의견 달기</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
@@ -171,23 +174,43 @@
           <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
             <ol class="breadcrumb spb-1">
               <li class="breadcrumb-item active" aria-current="page">
-                <a href="https://uhug.github.io/RefDoc/extras/">Extras</a>
+                <a href="https://uhug.github.io/docs/%5B1001%5D%20%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%20%ED%95%A8%EC%88%98">[1001] 피보나치 함수</a>
               </li>
             </ol>
           </nav> -->
           <div class="td-content">
-            <h1 id="extras">Extras</h1>
-
-<p>Extras include other integrations that aren’t relevant to style or customization,
-but can further enhance your documentation pages. Currently, we have support
-for adding interactive quizzes.</p>
+            <h1 id="1003-피보나치-함수"><a href="http://icpc.me/1003">[1003] 피보나치 함수</a></h1>
+<div>&lt;img src='https://doky.space/assets/icpclev/b5.svg' height=23px&gt;</div>
 
 <ul>
-  <li><a href="example-quiz">Quizzes</a></li>
+  <li>node.js: [:o:]
+    <ul>
+      <li>200405</li>
+      <li>54:42 .52</li>
+      <li>시도: 2번</li>
+    </ul>
+  </li>
 </ul>
 
-<p>Would you like to see another question type, or another kind of extra? Please
-[open an issue])(https://github.com/dokysp/acmicpc-practice/issues/new).</p>
+<h3 id="메모">메모</h3>
+<ul>
+  <li>재귀함수와 반복함수
+    <ul>
+      <li>재귀함수는 구조상 시간이 오래 걸리는 구조이다.</li>
+      <li>재귀함수가 계산이 오래 걸리는 이유 -&gt; complete binary tree 구조로 계산됨 -&gt; 시간복잡도: O(2^n)</li>
+      <li><img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F216DF84957B87E6125" alt="트리구조" /></li>
+      <li>따라서, 문제 조건인 0.25초 이내에 풀어내기 위해서는 재귀함수로 짜여진 피보나치 함수를 반복함수로 바꾸어주어야 한다!</li>
+      <li>규칙성을 찾아내는데 시간이 많이 걸렸다..</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="참고">참고</h3>
+<ul>
+  <li><a href="https://shoark7.github.io/programming/algorithm/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%ED%95%B4%EA%B2%B0%ED%95%98%EB%8A%94-5%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95">피보나치 수열 알고리즘을 해결하는 5가지 방법</a></li>
+  <li><a href="https://greatzzo.tistory.com/14">Binary Tree</a></li>
+  <li><a href="https://blog.naver.com/kks227/220769859177">빅오 표기법(Big-O notation), 시간복잡도, 공간복잡도</a></li>
+</ul>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -239,7 +262,7 @@ $.each(headers, function(i, header){
 </script>
 
 <script>
-$('h1').first().append('<div><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#survey ">survey</a></span></div>')</script>
+$('h1').first().append('<div><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#재귀함수 ">재귀함수</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#구현 ">구현</a></span></div>')</script>
 
 
             
