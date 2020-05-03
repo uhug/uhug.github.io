@@ -1,12 +1,14 @@
 - title: 문제풀이
   links:
     - title: "모든 문제 보기"
-      url: "archive"
+      url: "problems"
     - title: 문제 분류별 보기
       url: "tags"
     - title: 기타
       children:
-        - title: About
-          url: "about"
+        - title: Archive
+          url: "Archive"
         - title: News
           url: "news"
+        - title: About
+          url: "about"
