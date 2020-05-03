@@ -32,9 +32,11 @@ github_user: "dokysp"
 github_repo: "acmicpc-practice"
 
 # Optional
+twitter:
 facebook: dokysp
 linkedin: 
 dockerhub: 
+website: https://doky.space
 
 # Should there be feedback buttons at the bottom of pages?
 feedback: true
