@@ -62,23 +62,27 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-    
-    
+  
+
+  send_telegram_message:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
     # https://github.com/marketplace/actions/telegram-notify
     - name: Send Success Telegram Message
-      if: ${{ job.status }} == 'success'
+      if: needs.build.result == 'success'
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          블로그 배포 ${{ job.status }}
+          ${{ needs.build.result }}\ngithub.event.head_commit.message
 
     - name: Send Failure Telegram Message
-      if: job.status != 'success'
+      if: needs.build.result != 'success'
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          ${{ job.status }}\ngithub.event.head_commit.message
+          ${{ needs.build.result }}\ngithub.event.head_commit.message
