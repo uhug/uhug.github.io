@@ -47,6 +47,7 @@ jobs:
     - name: Build blog 🔨
       run: |
         rm -fr node_modules  # 빌드 시 충돌 방지
+        rm -fr RefDoc  # 빌드 시 충돌 방지
         bundle exec jekyll build
       
     - name: Deploy build
