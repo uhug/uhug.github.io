@@ -608,7 +608,8 @@ mark,
 .img-fluid,
 .td-content img {
     max-width: 100%;
-    height: auto
+    /* height: auto */
+    /* 이 옵션을 해제해야 img height 속성이 먹음! */
 }
 
 .img-thumbnail {
