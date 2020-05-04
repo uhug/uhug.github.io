@@ -7,7 +7,7 @@
     - title: 기타
       children:
         - title: Archive
-          url: "Archive"
+          url: "archive"
         - title: News
           url: "news"
         - title: About
