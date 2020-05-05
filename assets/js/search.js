@@ -84,19 +84,19 @@ excluded_in_search: true
 	}
 
 	// 한국어 및 특수문자 검색 가능하게 변경
-	// window.index = lunr(function () {
-	// 	this.field("id");
-	// 	this.field("title", {boost: 10});
-	// 	this.field("categories");
-	// 	this.field("url");
-	// 	this.field("content");
-	// });
-	window.index = new lunr.Index;
-	this.field("id");
-	this.field("title", {boost: 10});
-	this.field("categories");
-	this.field("url");
-	this.field("content");
+	window.index = lunr(function () {
+		this.field("id");
+		this.field("title", {boost: 10});
+		this.field("categories");
+		this.field("url");
+		this.field("content");
+	});
+	// window.index = new lunr.Index;
+	// this.field("id");
+	// this.field("title", {boost: 10});
+	// this.field("categories");
+	// this.field("url");
+	// this.field("content");
 
 
 	var query = decodeURIComponent((getQueryVariable("q") || "").replace(/\+/g, "%20")),
