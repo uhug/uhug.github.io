@@ -20,19 +20,19 @@
 <link rel="icon" type="image/png" href="/assets/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/assets/favicons/android-192x192.png"sizes="192x192">
 
-<title>[1000] A+B</title>
-<meta property="og:title" content="[1000] A+B" />
-<meta property="og:description" content="[1000] A+B 문제풀이" />
+<title>[1010] 다리 놓기</title>
+<meta property="og:title" content="[1010] 다리 놓기" />
+<meta property="og:description" content="[1010] 다리 놓기 문제풀이" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://uhug.github.io" />
 <meta property="og:site_name" content="https://uhug.github.io" />
 
-<meta itemprop="name" content="[1000] A+B">
-<meta itemprop="description" content="[1000] A+B 문제풀이">
+<meta itemprop="name" content="[1010] 다리 놓기">
+<meta itemprop="description" content="[1010] 다리 놓기 문제풀이">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[1000] A+B"/>
-<meta name="twitter:description" content="[1000] A+B 문제풀이"/>
+<meta name="twitter:title" content="[1010] 다리 놓기"/>
+<meta name="twitter:description" content="[1010] 다리 놓기 문제풀이"/>
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/palette.css">
@@ -148,8 +148,8 @@
         <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
           <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
             <!-- 페이지 수정 기능이 별 의미가 없으므로 주석처리 -->
-<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/1000.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
-<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/1000.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
+<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/1010.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
+<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/1010.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
 <a href="https://github.com/dokysp/acmicpc-practice/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 프로젝트 의견 달기</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
@@ -171,28 +171,96 @@
           <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
             <ol class="breadcrumb spb-1">
               <li class="breadcrumb-item active" aria-current="page">
-                <a href="https://uhug.github.io/docs/1000">[1000] A+B</a>
+                <a href="https://uhug.github.io/docs/1010">[1010] 다리 놓기</a>
               </li>
             </ol>
           </nav> -->
           <div class="td-content">
-            <h1><img src="https://doky.space/assets/icpclev/b5.svg" height="37px" /> <a href="http://icpc.me/1000">[1000] A+B</a></h1>
+            <h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px" /> <a href="http://icpc.me/1010">[1010] 다리 놓기</a></h1>
 
-<p><a href="https://github.com/DokySp/acmicpc-practice/tree/master/1000"><button class="btn btn-info">코드 보러가기</button></a></p>
+<p><a href="https://github.com/DokySp/acmicpc-practice/tree/master/1010"><button class="btn btn-info">코드 보러가기</button></a></p>
 
 <ul>
-  <li>node.js: [:o:]
+  <li><strong>node.js: [:o:]</strong>
     <ul>
-      <li>200404</li>
-      <li>04:43 .75</li>
-      <li>시도: 1번</li>
+      <li>20200415</li>
+      <li>01:51:04 .32 +α</li>
+      <li>시도: 10번</li>
     </ul>
   </li>
-  <li>C [:o:]
+  <li><strong>C: [:o:]</strong>
     <ul>
-      <li>200404</li>
-      <li>01:45 .01</li>
-      <li>1번</li>
+      <li>20200415</li>
+      <li>-</li>
+      <li>시도: 6번</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="메모">메모</h3>
+<ul>
+  <li>DP문제 &amp; 조합 문제!</li>
+  <li>조합으로 풀 경우,
+    <ul>
+      <li>DP로 풀 경우, 너무 오래 걸린다.. <em>(code2)</em></li>
+      <li><strong><sub>m</sub>C<sub>n</sub></strong> 을 계산하면 그냥 답이 나온다.. <em>(code1)</em></li>
+    </ul>
+  </li>
+  <li>DP로 풀 경우
+    <ul>
+      <li>탐색을 통해 M의 마지막 노드에 도달할 수 있는 경우의 수를 구한다</li>
+      <li>단, 이렇게 구하게 되면.. 시간 초과가 뜨게 된다..(C, JS 공통) <em>(code2)</em></li>
+      <li><a href="https://gooddaytocode.blogspot.com/2016/04/acmicpc-1010.html">이 글</a>처럼, 미리 모든 값을 구한 후, n과 m값에 맞추어 계산하면 시간초과를 피할 수 있다! <em>(code3)</em></li>
+      <li>
+        <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">//</span><span class="w"> </span><span class="err">path</span><span class="p">[</span><span class="err">n</span><span class="p">][</span><span class="err">m</span><span class="p">]</span><span class="w">
+</span><span class="p">[</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">    </span><span class="mi">1</span><span class="p">,</span><span class="w">    </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">     </span><span class="mi">1</span><span class="p">,</span><span class="w">     </span><span class="mi">1</span><span class="p">,</span><span class="w">  </span><span class="mi">1</span><span class="p">,</span><span class="w">  </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">[</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="err">(*)</span><span class="mi">1</span><span class="p">,</span><span class="w">    </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">     </span><span class="mi">5</span><span class="p">,</span><span class="w">     </span><span class="mi">6</span><span class="p">,</span><span class="w">  </span><span class="mi">7</span><span class="p">,</span><span class="w">  </span><span class="mi">8</span><span class="p">,</span><span class="w">    </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">[</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="err">(*)</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="err">(*)</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">    </span><span class="mi">10</span><span class="p">,</span><span class="w">    </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="mi">21</span><span class="p">,</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w">   </span><span class="mi">36</span><span class="p">,</span><span class="w">   </span><span class="mi">45</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">[</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="err">(*)</span><span class="mi">10</span><span class="p">,</span><span class="w">    </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mi">35</span><span class="p">,</span><span class="w"> </span><span class="mi">56</span><span class="p">,</span><span class="w">   </span><span class="mi">84</span><span class="p">,</span><span class="w">  </span><span class="mi">120</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">[</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="err">(*)</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="err">(*)</span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="mi">35</span><span class="p">,</span><span class="w"> </span><span class="mi">70</span><span class="p">,</span><span class="w">  </span><span class="mi">126</span><span class="p">,</span><span class="w">  </span><span class="mi">210</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">[</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">     </span><span class="mi">1</span><span class="p">,</span><span class="w">     </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="mi">21</span><span class="p">,</span><span class="w"> </span><span class="mi">56</span><span class="p">,</span><span class="w">  </span><span class="mi">126</span><span class="p">,</span><span class="w">  </span><span class="mi">252</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">[</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">     </span><span class="mi">0</span><span class="p">,</span><span class="w">     </span><span class="mi">1</span><span class="p">,</span><span class="w">  </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w">   </span><span class="mi">84</span><span class="p">,</span><span class="w">  </span><span class="mi">210</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">[</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">     </span><span class="mi">0</span><span class="p">,</span><span class="w">     </span><span class="mi">0</span><span class="p">,</span><span class="w">  </span><span class="mi">1</span><span class="p">,</span><span class="w">  </span><span class="mi">8</span><span class="p">,</span><span class="w">   </span><span class="mi">36</span><span class="p">,</span><span class="w">  </span><span class="mi">120</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span></code></pre></div>        </div>
+        <ul>
+          <li>n==2 부터 <code class="language-plaintext highlighter-rouge">path[i][j] = path[i-1][j-1] + path[i][j-1]</code> 이 성립한다!</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="참고">참고</h3>
+<ul>
+  <li>순열과 조합 개념
+    <ul>
+      <li>순열
+        <ul>
+          <li>n개 중 r개를 순서를 고려하여 만들 수 있는 짝의 개수</li>
+          <li>[1,2,3] 중, 2개를 고를 경우,
+            <ul>
+              <li><strong>[1,2], [1,3], [2,3],</strong> [2,1], [3,1], [3,2]</li>
+              <li>총 <strong>6개</strong></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>조합
+        <ul>
+          <li>n개 중 r개를 순서를 고려하지 않고 만들 수 있는 짝의 개수</li>
+          <li>[1,2,3] 중, 2개를 고를 경우,
+            <ul>
+              <li><strong>[1,2], [1,3], [2,3]</strong></li>
+              <li>총 <strong>3개</strong></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>따라서, 1010번 문제는 <strong><em>조합을 통해 경우의 수를 모두 구할 수 있다</em></strong>는 결론
+        <ul>
+          <li>공식은 구글에 검색해보길..</li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
@@ -247,7 +315,7 @@ $.each(headers, function(i, header){
 </script>
 
 <script>
-$('h1').first().append('<div><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#구현 ">구현</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#사칙연산 ">사칙연산</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#수학 ">수학</a></span></div>')</script>
+$('h1').first().append('<div></div>')</script>
 
 
             

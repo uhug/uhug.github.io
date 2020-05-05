@@ -20,19 +20,19 @@
 <link rel="icon" type="image/png" href="/assets/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/assets/favicons/android-192x192.png"sizes="192x192">
 
-<title>[1000] A+B</title>
-<meta property="og:title" content="[1000] A+B" />
-<meta property="og:description" content="[1000] A+B 문제풀이" />
+<title>[15552] 빠른 A+B</title>
+<meta property="og:title" content="[15552] 빠른 A+B" />
+<meta property="og:description" content="[15552] 빠른 A+B 문제풀이" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://uhug.github.io" />
 <meta property="og:site_name" content="https://uhug.github.io" />
 
-<meta itemprop="name" content="[1000] A+B">
-<meta itemprop="description" content="[1000] A+B 문제풀이">
+<meta itemprop="name" content="[15552] 빠른 A+B">
+<meta itemprop="description" content="[15552] 빠른 A+B 문제풀이">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[1000] A+B"/>
-<meta name="twitter:description" content="[1000] A+B 문제풀이"/>
+<meta name="twitter:title" content="[15552] 빠른 A+B"/>
+<meta name="twitter:description" content="[15552] 빠른 A+B 문제풀이"/>
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/palette.css">
@@ -148,8 +148,8 @@
         <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
           <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
             <!-- 페이지 수정 기능이 별 의미가 없으므로 주석처리 -->
-<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/1000.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
-<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/1000.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
+<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/15552.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
+<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/15552.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
 <a href="https://github.com/dokysp/acmicpc-practice/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 프로젝트 의견 달기</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
@@ -171,29 +171,100 @@
           <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
             <ol class="breadcrumb spb-1">
               <li class="breadcrumb-item active" aria-current="page">
-                <a href="https://uhug.github.io/docs/1000">[1000] A+B</a>
+                <a href="https://uhug.github.io/docs/15552">[15552] 빠른 A+B</a>
               </li>
             </ol>
           </nav> -->
           <div class="td-content">
-            <h1><img src="https://doky.space/assets/icpclev/b5.svg" height="37px" /> <a href="http://icpc.me/1000">[1000] A+B</a></h1>
+            <h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px" /> <a href="http://icpc.me/15552">[15552] 빠른 A+B</a></h1>
 
-<p><a href="https://github.com/DokySp/acmicpc-practice/tree/master/1000"><button class="btn btn-info">코드 보러가기</button></a></p>
+<p><a href="https://github.com/DokySp/acmicpc-practice/tree/master/15552"><button class="btn btn-info">코드 보러가기</button></a></p>
 
 <ul>
-  <li>node.js: [:o:]
+  <li><strong>Node.js: [:o:]</strong>
     <ul>
-      <li>200404</li>
-      <li>04:43 .75</li>
+      <li>200409</li>
+      <li>1392ms / 223B</li>
+      <li>시도: 5번</li>
+    </ul>
+  </li>
+  <li><strong>C [:o:]</strong>
+    <ul>
+      <li>200409</li>
+      <li>340ms / 318B</li>
+      <li>시도: 2번</li>
+    </ul>
+  </li>
+  <li><strong>Java [:o:]</strong>
+    <ul>
+      <li>200409</li>
+      <li>628ms / 864B</li>
+      <li>시도: 6번</li>
+    </ul>
+  </li>
+  <li><strong>Python 3 [:o:]</strong>
+    <ul>
+      <li>200409</li>
+      <li>1068ms / 172B</li>
+      <li>시도: 5번</li>
+    </ul>
+  </li>
+  <li><strong>Python 2 [:o:]</strong>
+    <ul>
+      <li>200409</li>
+      <li>1284ms / 172B</li>
       <li>시도: 1번</li>
     </ul>
   </li>
-  <li>C [:o:]
+</ul>
+
+<h3 id="메모">메모</h3>
+<ul>
+  <li>언어별 연산속도 비교를 위해 풀어본 문제
     <ul>
-      <li>200404</li>
-      <li>01:45 .01</li>
-      <li>1번</li>
+      <li><strong>C : 340ms</strong></li>
+      <li>Java : 628ms</li>
+      <li>Python 3 : 1068ms</li>
+      <li>Python 2 : 1284ms</li>
+      <li><strong>JS : 1392ms</strong></li>
     </ul>
+  </li>
+  <li>알고리즘 문제의 경우, <strong>효율성 « 속도</strong>이므로
+    <ul>
+      <li>동적배열 « <strong>배열을 미리 많이 잡아두는 것</strong></li>
+      <li>이러한 방법이 문제풀이 속도에 도움을 준다!</li>
+    </ul>
+  </li>
+  <li>
+    <p>언어별로 코드에 도움이 될만한 글 및 링크 추가해둠!</p>
+  </li>
+  <li><strong>백준 Javascript 꿀팁!</strong> (상단 순부터 영향이 큼!)
+    <ol>
+      <li>console.log() 사용을 한 번 이상 하지 말자
+        <ul>
+          <li>엄청난 성능 저하의 원인</li>
+          <li>출력값은 한 배열에 저장해두고 마지막에 한꺼번에 출력하는 것이 바람직하다!</li>
+        </ul>
+      </li>
+      <li>splice() 사용을 자제하자
+        <ul>
+          <li>사용 시, 엄청난 성능 저하를 불러일으킨다</li>
+          <li>배열로 직접 접근해서 값을 가져오는 것이 현명하다.</li>
+        </ul>
+      </li>
+      <li>split() 사용을 최소화하자
+        <ul>
+          <li>성능에 약간 영향을 준다.</li>
+          <li>가급적이면 split 함수 사용을 최소화하는 방향으로 코딩하자</li>
+        </ul>
+      </li>
+      <li>스코프 내부에서만 쓰이는 변수일 경우, 지역변수로 선언한다.
+        <ul>
+          <li>전역 선언 시, 값을 탐색하는 시간이 추가된다.</li>
+          <li>전역으로 써야 하는 변수가 아닌 이상 지역변수로 선언하자!</li>
+        </ul>
+      </li>
+    </ol>
   </li>
 </ul>
 
@@ -247,7 +318,7 @@ $.each(headers, function(i, header){
 </script>
 
 <script>
-$('h1').first().append('<div><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#구현 ">구현</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#사칙연산 ">사칙연산</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#수학 ">수학</a></span></div>')</script>
+$('h1').first().append('<div></div>')</script>
 
 
             

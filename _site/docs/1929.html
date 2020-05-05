@@ -20,19 +20,19 @@
 <link rel="icon" type="image/png" href="/assets/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/assets/favicons/android-192x192.png"sizes="192x192">
 
-<title>[1000] A+B</title>
-<meta property="og:title" content="[1000] A+B" />
-<meta property="og:description" content="[1000] A+B 문제풀이" />
+<title>[1929] 소수 구하기</title>
+<meta property="og:title" content="[1929] 소수 구하기" />
+<meta property="og:description" content="[1929] 소수 구하기 문제풀이" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://uhug.github.io" />
 <meta property="og:site_name" content="https://uhug.github.io" />
 
-<meta itemprop="name" content="[1000] A+B">
-<meta itemprop="description" content="[1000] A+B 문제풀이">
+<meta itemprop="name" content="[1929] 소수 구하기">
+<meta itemprop="description" content="[1929] 소수 구하기 문제풀이">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[1000] A+B"/>
-<meta name="twitter:description" content="[1000] A+B 문제풀이"/>
+<meta name="twitter:title" content="[1929] 소수 구하기"/>
+<meta name="twitter:description" content="[1929] 소수 구하기 문제풀이"/>
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/palette.css">
@@ -148,8 +148,8 @@
         <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
           <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
             <!-- 페이지 수정 기능이 별 의미가 없으므로 주석처리 -->
-<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/1000.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
-<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/1000.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
+<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/1929.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
+<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/1929.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
 <a href="https://github.com/dokysp/acmicpc-practice/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 프로젝트 의견 달기</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
@@ -171,30 +171,62 @@
           <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
             <ol class="breadcrumb spb-1">
               <li class="breadcrumb-item active" aria-current="page">
-                <a href="https://uhug.github.io/docs/1000">[1000] A+B</a>
+                <a href="https://uhug.github.io/docs/1929">[1929] 소수 구하기</a>
               </li>
             </ol>
           </nav> -->
           <div class="td-content">
-            <h1><img src="https://doky.space/assets/icpclev/b5.svg" height="37px" /> <a href="http://icpc.me/1000">[1000] A+B</a></h1>
+            <h1><img src="https://doky.space/assets/icpclev/s2.svg" height="37px" /> <a href="http://icpc.me/1929">[1929] 소수 구하기</a></h1>
 
-<p><a href="https://github.com/DokySp/acmicpc-practice/tree/master/1000"><button class="btn btn-info">코드 보러가기</button></a></p>
+<p><a href="https://github.com/DokySp/acmicpc-practice/tree/master/1929"><button class="btn btn-info">코드 보러가기</button></a></p>
 
 <ul>
-  <li>node.js: [:o:]
+  <li><strong>C: [:o:]</strong>
     <ul>
-      <li>200404</li>
-      <li>04:43 .75</li>
-      <li>시도: 1번</li>
+      <li>200419</li>
+      <li>33:00 .42</li>
+      <li>시도: 2번</li>
     </ul>
   </li>
-  <li>C [:o:]
+</ul>
+
+<h3 id="메모">메모</h3>
+<ul>
+  <li>소수: 1과 자기 자신 이외의 나누어 떨어지는 수가 없는 수.
     <ul>
-      <li>200404</li>
-      <li>01:45 .01</li>
-      <li>1번</li>
+      <li>즉, M이 소수인지 판별하기 위해서는 1~M까지 나누어보고 나머지가 0인 경우가 없는 수를 골라내면 된다! (code2)</li>
+      <li>문제는.. 이 방법은 시간이 엄청나게 오래걸린다는 것!
+        <ul>
+          <li>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>M부터 N사이의 모든 수에 대해
+ ➡️ 1~(M-1) 부터 1~(N-1)까지의 나눗셈 연산을 해야 한다!
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><strong>에라토스테네스의 채</strong>
+        <ul>
+          <li>2, 3을 기준으로 나누어 떨어지는 수를 제거해나가는 방법으로</li>
+          <li>연산량을 줄여주는 방법!</li>
+          <li>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1부터 1,000,000 사이 소수를 전부 계산한다!
+ ➡️ 2의 배수 삭제, 3의 배수 삭제, ...
+    뒤로 갈 수록 고려할 경우의 수가 줄어든다!
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
     </ul>
   </li>
+</ul>
+
+<h3 id="참고">참고</h3>
+<ul>
+  <li>1은 소수가 아님!</li>
+  <li><a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Algorithm_complexity">[Wiki]Sieve of Eratosthenes</a></li>
+  <li><a href="https://velog.io/@max9106/Algorithm-%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4">[Algorithm] 에라토스테네스의 체</a></li>
+  <li><a href="http://doocong.com/algorithm/sieve-of-eratosthenes/">에라토스테네스의 체 시간복잡도 #1</a></li>
+  <li><a href="http://blog.naver.com/PostView.nhn?blogId=kks227&amp;logNo=220793360258&amp;redirect=Dlog&amp;widgetTypeCall=true">에라토스테네스의 체 시간복잡도 #2</a></li>
 </ul>
 
 <script
@@ -247,7 +279,7 @@ $.each(headers, function(i, header){
 </script>
 
 <script>
-$('h1').first().append('<div><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#구현 ">구현</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#사칙연산 ">사칙연산</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#수학 ">수학</a></span></div>')</script>
+$('h1').first().append('<div></div>')</script>
 
 
             
