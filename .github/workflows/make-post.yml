@@ -50,7 +50,7 @@ jobs:
         git config --local user.name "uhug"
         git add .
         git status
-        git commit -am "Deploy with Github Actions (${GITHUB_WORKFLOW}) in `date -d'9 hour' +%Y.%m.%d %H:%M:%S`"
+        git commit -am "Deploy with Github Actions (${GITHUB_WORKFLOW}) in `date -d'9 hour' '+%Y.%m.%d-%H:%M:%S'`"
 
 
     - name: Push changes
