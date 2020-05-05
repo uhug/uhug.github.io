@@ -7,9 +7,10 @@
 
 ### TO-DO
  - 파비콘 수정
- - 검색 기능 수정
+ - ~~검색 기능 수정~~
  - 테마색 변경
  - 모바일 접속 시 상단바 크기 변경
+ - jemoji 추가 (https://github.com/jekyll/jemoji)
 
 ![https://raw.githubusercontent.com/vsoch/docsy-jekyll/master/assets/img/docsy-jekyll.png](https://raw.githubusercontent.com/vsoch/docsy-jekyll/master/assets/img/docsy-jekyll.png)
 
