@@ -5,6 +5,12 @@
     <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
 </a>
 
+### TO-DO
+ - 파비콘 수정
+ - 검색 기능 수정
+ - 테마색 변경
+ - 모바일 접속 시 상단바 크기 변경
+
 ![https://raw.githubusercontent.com/vsoch/docsy-jekyll/master/assets/img/docsy-jekyll.png](https://raw.githubusercontent.com/vsoch/docsy-jekyll/master/assets/img/docsy-jekyll.png)
 
 This is a [starter template](https://vsoch.github.com/docsy-jekyll/) for a Docsy jekyll theme, based
