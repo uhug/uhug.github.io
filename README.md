@@ -96,3 +96,8 @@ You can then open your browser to [http://localhost:4000](http://localhost:4000)
 to see the server running.
 
 > Node : changes `baseurl: ""` in _config.yml  when you are running in local and prod according to the requirement.
+
+
+### 참고
+ - [lunr.js : 검색 기능 제공](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/)
+    - [한글 검색 에러 해결; charset="utf-8"](https://cjeon.com/2016/05/29/Jekyll-lunr.html)
