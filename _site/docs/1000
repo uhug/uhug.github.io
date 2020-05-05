@@ -20,20 +20,20 @@
 <link rel="icon" type="image/png" href="/assets/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/assets/favicons/android-192x192.png"sizes="192x192">
 
-<title>Documentation</title>
-<meta property="og:title" content="Documentation" />
+<title>Doky's 백준 위키</title>
+<meta property="og:title" content="Doky's 백준 위키" />
 <meta property="og:description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
 " />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://uhug.github.io" />
 <meta property="og:site_name" content="https://uhug.github.io" />
 
-<meta itemprop="name" content="Documentation">
+<meta itemprop="name" content="Doky's 백준 위키">
 <meta itemprop="description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
 ">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Documentation"/>
+<meta name="twitter:title" content="Doky's 백준 위키"/>
 <meta name="twitter:description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
 "/>
 
@@ -151,8 +151,8 @@
         <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
           <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
             <!-- 페이지 수정 기능이 별 의미가 없으므로 주석처리 -->
-<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/pages/docs.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
-<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/pages/docs.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
+<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/1000" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
+<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/1000" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
 <a href="https://github.com/dokysp/acmicpc-practice/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 프로젝트 의견 달기</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
@@ -174,38 +174,24 @@
           <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
             <ol class="breadcrumb spb-1">
               <li class="breadcrumb-item active" aria-current="page">
-                <a href="https://uhug.github.io/problems/">Documentation</a>
+                <a href="https://uhug.github.io/docs/1000"></a>
               </li>
             </ol>
           </nav> -->
           <div class="td-content">
-            <h1 id="문제풀이">문제풀이</h1>
+            <h1><img src="https://doky.space/assets/icpclev/b5.svg" height="37px"> <a href="http://icpc.me/1000">[1000] A+B</a></h1>
 
-<p>모든 문제 보기</p>
+<a href="https://github.com/DokySp/acmicpc-practice/tree/master/1000"><button class="btn btn-info">코드 보러가기</button></a>
 
-<div class="section-index">
-    <hr class="panel-line" />
-            
-    <font style="font-size: 15px;"><b><a href="/docs/1000"></a></b></font><br />
-            
-    <font style="font-size: 15px;"><b><a href="/docs/%5B1000%5D%20A+B">[1000] a+b</a></b></font><br />
-            
-    <font style="font-size: 15px;"><b><a href="/docs/%5B1003%5D%20%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%20%ED%95%A8%EC%88%98">[1003] 피보나치 함수</a></b></font><br />
-    
-    <!--         
-    <div class="entry">
-    <h5><a href="/docs/1000"></a></h5>
-    <p></p>
-    </div>        
-    <div class="entry">
-    <h5><a href="/docs/%5B1000%5D%20A+B">[1000] a+b</a></h5>
-    <p></p>
-    </div>        
-    <div class="entry">
-    <h5><a href="/docs/%5B1003%5D%20%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%20%ED%95%A8%EC%88%98">[1003] 피보나치 함수</a></h5>
-    <p></p>
-    </div> -->
-</div>
+- node.js: [:o:]
+  - 200404
+  - 04:43 .75
+  - 시도: 1번
+
+- C [:o:]
+  - 200404
+  - 01:45 .01
+  - 1번
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
