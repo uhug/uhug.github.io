@@ -1,3 +1,11 @@
 vendor
 # _site
 Gemfile.lock
+
+list
+node_modules
+
+acmicpc-practice
+acmicpc-practice/*
+
+package-lock.json

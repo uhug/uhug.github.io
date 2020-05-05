@@ -15,30 +15,20 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    # - name: git clone & make list
-    #   run: |
-    #     git clone https://github.com/DokySp/acmicpc-practice.git
-    #     find ./acmicpc-practice | grep *.md > ./tools/list
 
-#     - name: Add & Commit Documents
-#       run: |
-#         git config --local user.email "uhug123@hanmail.net"
-#         git config --local user.name "uhug"
-#         git add .
-#         git commit -m "CI: Build posts into './_post' folder" -a
+    - name: git clone & make list
+      run: |
+        git clone https://github.com/DokySp/acmicpc-practice.git
+        find ./acmicpc-practice | grep .md > ./tools/list
 
     - name: Node setting
       run: |
         npm install
 
-    # - name: run script
-    #   run: |
-    #     node ./tools/makePost.js
+    - name: run script
+      run: |
+        node ./tools/makePost.js
 
-#     - name: Check out master
-#       uses: actions/checkout@master
-#       with:
-#         fetch-depth: 1
 
     - name: Install Jekyll
       run: |
@@ -50,7 +40,8 @@ jobs:
     - name: Build blog 🔨
       
       run: |
-        rm -fr node_modules  # 빌드 시 충돌 방지
+        rm -fr ./node_modules      # 빌드 시 충돌 방지
+        rm -fr ./acmicpc-practice  # 빌드 시 충돌 방지
         bundle exec jekyll build
 
     - name: Deploy build
@@ -61,10 +52,14 @@ jobs:
         git status
         git commit -am "Deploy with Github Actions (${GITHUB_WORKFLOW}) in `date -d'9 hour' +%Y.%m.%d %H:%M:%S`"
 
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+
+
+
 
   send-telegram-message:
     runs-on: ubuntu-latest
