@@ -9,3 +9,5 @@ acmicpc-practice
 acmicpc-practice/*
 
 package-lock.json
+
+.DS_Store
