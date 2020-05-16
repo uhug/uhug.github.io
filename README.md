@@ -110,3 +110,4 @@ to see the server running.
 ### 참고
  - [lunr.js : 검색 기능 제공](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/)
     - [한글 검색 에러 해결; charset="utf-8"](https://cjeon.com/2016/05/29/Jekyll-lunr.html)
+ - [파비콘 만들기](https://realfavicongenerator.net/)
