@@ -2,6 +2,7 @@
 layout: page
 title: Articles
 permalink: /archive/
+feedback: false
 ---
 # 아카이브
 

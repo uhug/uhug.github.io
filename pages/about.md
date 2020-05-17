@@ -1,6 +1,7 @@
 ---
 title: About
 permalink: /about/
+feedback: false
 ---
 
 # About

@@ -2,6 +2,7 @@
 layout: page
 title: Documentation
 permalink: /problems/
+feedback: false
 ---
 
 # 문제풀이

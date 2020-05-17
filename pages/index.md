@@ -2,6 +2,7 @@
 layout: page
 title: Doky의 백준 문제풀이
 permalink: /
+feedback: false
 ---
 
 # Doky의 백준 문제풀이
