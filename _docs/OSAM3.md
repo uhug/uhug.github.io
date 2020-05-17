@@ -1,6 +1,7 @@
 ---
 title: "[OSAM3] UI Event"
 description: "[OSAM3] UI Event 문제풀이"
+feedback:true
 ---
 <h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px"> <a href="http://icpc.me/OSAM3">[OSAM3] UI Event</a></h1>
 

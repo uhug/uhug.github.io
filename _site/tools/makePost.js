@@ -52,7 +52,7 @@ for(var i=0; i<list.length; i++){
     var context = '---\ntitle: "'+title+'"\ndescription: "' + description + '"'
     // 태그가 있을 경우, 태그 추가
     if(tag != ' ') context += '\ntags: \n' + tag  
-    context += '\n---\n<h1><img src="https://doky.space/assets/icpclev/'+ lev +'.svg" height="37px"> <a href="http://icpc.me/' + fileName + '">' + title + "</a></h1>\n\n" + button + "\n"
+    context += '\nfeedback:true\n---\n<h1><img src="https://doky.space/assets/icpclev/'+ lev +'.svg" height="37px"> <a href="http://icpc.me/' + fileName + '">' + title + "</a></h1>\n\n" + button + "\n"
 
     // 기존 파일의 앞부분을 새로운 내용으로 변경
     file = file.trim().split('\n')
