@@ -39,7 +39,7 @@
   
   var disqus_config = function () {
   this.page.url = 'https://uhug.github.io';  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = '{{ post.url | prepend: site.baseurl }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  this.page.identifier = document.URL.slice(document.URL.indexOf(document.domain)+document.domain.length, document.URL.length); // Replace PAGE_IDENTIFIER with your page's unique identifier variable
   };
   
   (function() { // DON'T EDIT BELOW THIS LINE
