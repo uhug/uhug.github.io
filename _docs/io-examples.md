@@ -1,7 +1,7 @@
 ---
 title: "[io-examples] IO Examples"
 description: "[io-examples] IO Examples 문제풀이"
-feedback:true
+feedback: true
 ---
 <h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px"> <a href="http://icpc.me/io-examples">[io-examples] IO Examples</a></h1>
 

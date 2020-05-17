@@ -43,22 +43,19 @@
 <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-<title>Doky's 백준 위키</title>
-<meta property="og:title" content="Doky's 백준 위키" />
-<meta property="og:description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
-" />
+<title>[2675] 문자열 반복(B2)</title>
+<meta property="og:title" content="[2675] 문자열 반복(B2)" />
+<meta property="og:description" content="[2675] 문자열 반복(B2) 문제풀이" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://uhug.github.io" />
 <meta property="og:site_name" content="https://uhug.github.io" />
 
-<meta itemprop="name" content="Doky's 백준 위키">
-<meta itemprop="description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
-">
+<meta itemprop="name" content="[2675] 문자열 반복(B2)">
+<meta itemprop="description" content="[2675] 문자열 반복(B2) 문제풀이">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Doky's 백준 위키"/>
-<meta name="twitter:description" content="백준 온라인 저지를 풀고 풀이 내용을 정리한 위키입니다.
-"/>
+<meta name="twitter:title" content="[2675] 문자열 반복(B2)"/>
+<meta name="twitter:description" content="[2675] 문자열 반복(B2) 문제풀이"/>
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/palette.css">
@@ -220,7 +217,7 @@ if (!doNotTrack) {
           <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
             <ol class="breadcrumb spb-1">
               <li class="breadcrumb-item active" aria-current="page">
-                <a href="https://uhug.github.io/docs/2675"></a>
+                <a href="https://uhug.github.io/docs/2675">[2675] 문자열 반복(B2)</a>
               </li>
             </ol>
           </nav> -->
@@ -298,12 +295,106 @@ $.each(headers, function(i, header){
 })
 </script>
 
-
+<script>
+$('h1').first().append('<div></div>')</script>
 
 
             
             <!-- site -> page -->
-<br/>
+<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+
+
+<br><hr>
+<h5 class="feedback--title">Feedback</h5>
+<p class="feedback--question">본 정보가 도움이 되셨나요?</p>
+<button class="btn btn-success feedback--answer feedback--answer-yes">🙂</button>
+<button class="btn btn-danger feedback--answer feedback--answer-no">🙁</button>
+<p class="feedback--response feedback--response-yes">
+  피드백 감사합니다!<br>이 글에 대한 더 좋은 아이디어가 있다면 <a href="https://github.com/dokysp/acmicpc-practice/issues/new">여기에 의견을 남겨주세요!</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  피드백 감사합니다!<br>혹시 잘못된 내용 혹은 오타가 있다면, <a href="https://github.com/dokysp/acmicpc-practice/issues/new">의견을 남겨주세요!</a>.
+</p>
+
+<br><br>
+
+
+<!-- https://jamesu.dev/posts/2020/01/03/adding-disqus-comment-service-to-jekyll/ -->
+<div>
+  <div id="disqus_thread"></div>
+  <script>
+  
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  
+  var disqus_config = function () {
+  this.page.url = 'https://uhug.github.io/docs/2675';  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = '/docs/2675'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://uhug-github-io.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+  <script id="dsq-count-scr" src="//uhug-github-io.disqus.com/count.js" async></script>
+  <a href="http:///docs/#disqus_thread">Link</a>
+</div>
+
+
+
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script><br/>
 
 
           </div>

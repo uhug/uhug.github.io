@@ -1,7 +1,7 @@
 ---
 title: "[OSAM4] 흔한 제목 찾기"
 description: "[OSAM4] 흔한 제목 찾기 문제풀이"
-feedback:true
+feedback: true
 ---
 <h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px"> <a href="http://icpc.me/OSAM4">[OSAM4] 흔한 제목 찾기</a></h1>
 
