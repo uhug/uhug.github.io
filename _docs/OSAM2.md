@@ -2,11 +2,12 @@
 title: "[OSAM2] 행운권 추첨"
 description: "[OSAM2] 행운권 추첨 문제풀이"
 tags: 
- - Unrated 
-
+ - Bronze 4
+ - "구현"
+ - "수학"
 feedback: true
 ---
-<h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px"> <a href="http://icpc.me/OSAM2">[OSAM2] 행운권 추첨</a></h1>
+<h1><img src="https://doky.space/assets/icpclev/b4.svg" height="37px"> <a href="http://icpc.me/OSAM2">[OSAM2] 행운권 추첨</a></h1>
 
 <a href="https://github.com/DokySp/acmicpc-practice/tree/master/OSAM2"><button class="btn btn-info">코드 보러가기</button></a>
 

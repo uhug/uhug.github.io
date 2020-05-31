@@ -2,11 +2,13 @@
 title: "[OSAM1] 공정한 심사"
 description: "[OSAM1] 공정한 심사 문제풀이"
 tags: 
- - Unrated 
-
+ - Bronze 5
+ - "사칙연산"
+ - "구현"
+ - "수학"
 feedback: true
 ---
-<h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px"> <a href="http://icpc.me/OSAM1">[OSAM1] 공정한 심사</a></h1>
+<h1><img src="https://doky.space/assets/icpclev/b5.svg" height="37px"> <a href="http://icpc.me/OSAM1">[OSAM1] 공정한 심사</a></h1>
 
 <a href="https://github.com/DokySp/acmicpc-practice/tree/master/OSAM1"><button class="btn btn-info">코드 보러가기</button></a>
 
