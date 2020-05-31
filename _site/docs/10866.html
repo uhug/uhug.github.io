@@ -43,19 +43,19 @@
 <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-<title>[1152] 단어의 개수</title>
-<meta property="og:title" content="[1152] 단어의 개수" />
-<meta property="og:description" content="[1152] 단어의 개수 문제풀이" />
+<title>[10866] 덱</title>
+<meta property="og:title" content="[10866] 덱" />
+<meta property="og:description" content="[10866] 덱 문제풀이" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://uhug.github.io" />
 <meta property="og:site_name" content="https://uhug.github.io" />
 
-<meta itemprop="name" content="[1152] 단어의 개수">
-<meta itemprop="description" content="[1152] 단어의 개수 문제풀이">
+<meta itemprop="name" content="[10866] 덱">
+<meta itemprop="description" content="[10866] 덱 문제풀이">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[1152] 단어의 개수"/>
-<meta name="twitter:description" content="[1152] 단어의 개수 문제풀이"/>
+<meta name="twitter:title" content="[10866] 덱"/>
+<meta name="twitter:description" content="[10866] 덱 문제풀이"/>
 
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/palette.css">
@@ -194,8 +194,8 @@ if (!doNotTrack) {
         <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
           <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
             <!-- 페이지 수정 기능이 별 의미가 없으므로 주석처리 -->
-<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/1152.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
-<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/1152.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
+<!-- <a href="https://github.com/dokysp/acmicpc-practice/edit/master/_docs/10866.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a> -->
+<a href="https://github.com/dokysp/acmicpc-practice/issues/new?labels=question&title=Question:&body=Question on: https://github.com/dokysp/acmicpc-practice/tree/master/_docs/10866.md" target="_blank"><i class="fab fa-github fa-fw"></i> 의견 달기</a>
 <a href="https://github.com/dokysp/acmicpc-practice/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 프로젝트 의견 달기</a>
 <!-- this will parse through the header fields and add a button to open
      an issue / ask a question on Github. The editable field should be in
@@ -217,43 +217,42 @@ if (!doNotTrack) {
           <!-- <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
             <ol class="breadcrumb spb-1">
               <li class="breadcrumb-item active" aria-current="page">
-                <a href="https://uhug.github.io/docs/1152">[1152] 단어의 개수</a>
+                <a href="https://uhug.github.io/docs/10866">[10866] 덱</a>
               </li>
             </ol>
           </nav> -->
           <div class="td-content">
-            <h1><img src="https://doky.space/assets/icpclev/b2.svg" height="37px" /> <a href="http://icpc.me/1152">[1152] 단어의 개수</a></h1>
+            <h1><img src="https://doky.space/assets/icpclev/s4.svg" height="37px" /> <a href="http://icpc.me/10866">[10866] 덱</a></h1>
 
-<p><a href="https://github.com/DokySp/acmicpc-practice/tree/master/1152"><button class="btn btn-info">코드 보러가기</button></a></p>
+<p><a href="https://github.com/DokySp/acmicpc-practice/tree/master/10866"><button class="btn btn-info">코드 보러가기</button></a></p>
 
 <ul>
-  <li><strong>C: [:o:]</strong>
+  <li><strong>C</strong>
     <ul>
-      <li>200419</li>
-      <li>27:15 .56</li>
-      <li>시도: 4번</li>
+      <li>200531</li>
+      <li>19:04 .28</li>
+      <li>시도: 1번</li>
     </ul>
   </li>
 </ul>
 
 <h3 id="메모">메모</h3>
 <ul>
-  <li>C언어의 경우, trim 및 strlen 기능을 직접 구현해야 한다
+  <li>단순한 덱(Deque) 구현 문제</li>
+  <li><strong>덱(Deque)</strong>이란?
     <ul>
-      <li>
-        <pre><code class="language-C">int strlen(char* str){
-    int i=0;
-    while(str[i] != '\0'){
-        i++;
-    }
-    return i;
-}
-</code></pre>
-      </li>
-      <li><code class="language-plaintext highlighter-rouge">trim()</code> : 앞뒤로 ascii 값이 <code class="language-plaintext highlighter-rouge">32</code>인 요소를 제거</li>
+      <li>큐와 스택의 장점만을 가져다 만든 자료구조</li>
+      <li>큐와 스택은 <strong>말단에 있는 자료를 가져다 쓰는 자료구조</strong>이고, 덱은 양쪽 끝에 저장되어 있는 값은 열람이 가능하다!</li>
+      <li>단, <strong>중간에 있는 값을 열람</strong>하는 것은 자료구조의 특성상 <strong>불가능</strong>하다!</li>
     </ul>
   </li>
-  <li>띄어쓰기를 카운팅할 때, 아무 단어가 없는 공백의 경우를 고려!</li>
+</ul>
+
+<h3 id="참고">참고</h3>
+<ul>
+  <li><a href="https://m.blog.naver.com/PostView.nhn?blogId=powhy123&amp;logNo=221009290191&amp;proxyReferer=https:%2F%2Fwww.google.com%2F">[C++ 자료구조] 큐(Queue) + 덱(Deque) + 원형 큐 설명</a></li>
+  <li><a href="https://uhug.github.io/docs/10828">[10828] 스택</a></li>
+  <li><a href="https://uhug.github.io/docs/10845">[10845] 큐</a></li>
 </ul>
 
 <script
@@ -306,7 +305,7 @@ $.each(headers, function(i, header){
 </script>
 
 <script>
-$('h1').first().append('<div><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#Bronze 2 ">Bronze 2</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#구현 ">구현</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#파싱 ">파싱</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#문자열 ">문자열</a></span></div>')</script>
+$('h1').first().append('<div><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#Silver 4 ">Silver 4</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#자료 구조 ">자료 구조</a></span><span style="font-size:12px" class="badge badge-primary"><a style="cursor:pointer; color:white" href="https://uhug.github.io/tags#덱 ">덱</a></span></div>')</script>
 
 
             
@@ -353,8 +352,8 @@ $('h1').first().append('<div><span style="font-size:12px" class="badge badge-pri
   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
   
   var disqus_config = function () {
-  this.page.url = 'https://uhug.github.io/docs/1152';  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = '/docs/1152'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  this.page.url = 'https://uhug.github.io/docs/10866';  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = '/docs/10866'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
   };
   
   (function() { // DON'T EDIT BELOW THIS LINE
