@@ -1,6 +1,9 @@
 ---
 title: "[OSAM2] 행운권 추첨"
 description: "[OSAM2] 행운권 추첨 문제풀이"
+tags: 
+ - Unrated 
+
 feedback: true
 ---
 <h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px"> <a href="http://icpc.me/OSAM2">[OSAM2] 행운권 추첨</a></h1>

@@ -1,6 +1,9 @@
 ---
 title: "[OSAM1] 공정한 심사"
 description: "[OSAM1] 공정한 심사 문제풀이"
+tags: 
+ - Unrated 
+
 feedback: true
 ---
 <h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px"> <a href="http://icpc.me/OSAM1">[OSAM1] 공정한 심사</a></h1>

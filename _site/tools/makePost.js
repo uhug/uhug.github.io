@@ -36,6 +36,17 @@ for(var i=0; i<list.length; i++){
 
     // 문제 레벨
     var lev = file.substring(file.indexOf("lev:")+4, file.length).trim().split("\n")[0]
+    var level;
+    switch(lev[0]){
+        case 'b': level = "Bronze " + lev[1]; break;
+        case 's': level = "Silver " + lev[1]; break;
+        case 'g': level = "Gold " + lev[1]; break;
+        case 'p': level = "Platinum " + lev[1]; break;
+        case 'd': level = "Diamond " + lev[1]; break;
+        case 'r': level = "Ruby " + lev[1]; break;
+        case 'u': level = "Unrated "; break;
+        default: break;
+    }
 
     // 태그
     var tag = ""
@@ -50,8 +61,12 @@ for(var i=0; i<list.length; i++){
 
     var button = '<a href="https://github.com/DokySp/acmicpc-practice/tree/master/' + fileName + '"><button class="btn btn-info">코드 보러가기</button></a>'
     var context = '---\ntitle: "'+title+'"\ndescription: "' + description + '"'
+
+    // 레벨을 태그로 생성 
+    context += '\ntags: \n - ' + level + '\n'
+
     // 태그가 있을 경우, 태그 추가
-    if(tag != ' ') context += '\ntags: \n' + tag  
+    if(tag != ' ') context += tag
     context += '\nfeedback: true\n---\n<h1><img src="https://doky.space/assets/icpclev/'+ lev +'.svg" height="37px"> <a href="http://icpc.me/' + fileName + '">' + title + "</a></h1>\n\n" + button + "\n"
 
     // 기존 파일의 앞부분을 새로운 내용으로 변경
