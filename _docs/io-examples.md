@@ -10,13 +10,13 @@ feedback: true
 
 <a href="https://github.com/DokySp/acmicpc-practice/tree/master/io-examples"><button class="btn btn-info">코드 보러가기</button></a>
 
-자세한 내용은 https://www.acmicpc.net/help/language 를 참고!
+자세한 내용은 [https://www.acmicpc.net/help/language](https://www.acmicpc.net/help/language) 를 참고!
 
  - [C
  - tags: ,
  - lev: u0
 
-자세한 내용은 https://www.acmicpc.net/help/language 를 참고!
+자세한 내용은 [https://www.acmicpc.net/help/language](https://www.acmicpc.net/help/language) 를 참고!
 
  - [C](https://github.com/DokySp/acmicpc-practice/tree/master/io-examples/c-language)
  - [Java](https://github.com/DokySp/acmicpc-practice/tree/master/io-examples/java)
