@@ -5,6 +5,7 @@ tags:
  - Bronze 4
  - "구현"
  - "수학"
+ - "배열"
 feedback: true
 ---
 <h1><img src="https://doky.space/assets/icpclev/b4.svg" height="37px"> <a href="http://icpc.me/OSAM2">[OSAM2] 행운권 추첨 [https://doky.space/osam2019/2020/03/28/osam01_1.html#2-%ED%96%89%EC%9A%B4%EA%B6%8C-%EC%B6%94%EC%B2%A8]</a></h1>
