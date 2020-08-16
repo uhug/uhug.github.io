@@ -6,7 +6,7 @@ tags:
 
 feedback: true
 ---
-<h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px"> <a href="http://icpc.me/io-examples">[io-examples] IO Examples</a></h1>
+<h1><img src="https://doky.space/assets/icpclev/u0.svg" height="37px"> <a href="http://icpc.me/io-examples" target="_blank">[io-examples] IO Examples</a></h1>
 
 <a href="https://github.com/DokySp/acmicpc-practice/tree/master/io-examples"><button class="btn btn-info">코드 보러가기</button></a>
 

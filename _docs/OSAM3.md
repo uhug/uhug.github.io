@@ -7,7 +7,7 @@ tags:
  - "다차원 배열"
 feedback: true
 ---
-<h1><img src="https://doky.space/assets/icpclev/b4.svg" height="37px"> <a href="http://icpc.me/OSAM3">[OSAM3] UI Event [https://doky.space/osam2019/2020/03/28/osam01_1.html#3-ui-event]</a></h1>
+<h1><img src="https://doky.space/assets/icpclev/b4.svg" height="37px"> <a href="http://icpc.me/OSAM3" target="_blank">[OSAM3] UI Event [https://doky.space/osam2019/2020/03/28/osam01_1.html#3-ui-event]</a></h1>
 
 <a href="https://github.com/DokySp/acmicpc-practice/tree/master/OSAM3"><button class="btn btn-info">코드 보러가기</button></a>
 

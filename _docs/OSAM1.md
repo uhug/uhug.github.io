@@ -8,7 +8,7 @@ tags:
  - "수학"
 feedback: true
 ---
-<h1><img src="https://doky.space/assets/icpclev/b4.svg" height="37px"> <a href="http://icpc.me/OSAM1">[OSAM1] 공정한 심사 [https://doky.space/osam2019/2020/03/28/osam01_1.html#1-%EA%B3%B5%EC%A0%95%ED%95%9C-%EC%8B%AC%EC%82%AC]</a></h1>
+<h1><img src="https://doky.space/assets/icpclev/b4.svg" height="37px"> <a href="http://icpc.me/OSAM1" target="_blank">[OSAM1] 공정한 심사 [https://doky.space/osam2019/2020/03/28/osam01_1.html#1-%EA%B3%B5%EC%A0%95%ED%95%9C-%EC%8B%AC%EC%82%AC]</a></h1>
 
 <a href="https://github.com/DokySp/acmicpc-practice/tree/master/OSAM1"><button class="btn btn-info">코드 보러가기</button></a>
 
