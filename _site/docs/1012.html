@@ -227,13 +227,6 @@ if (!doNotTrack) {
 <p><a href="https://github.com/DokySp/acmicpc-practice/tree/master/1012"><button class="btn btn-info">코드 보러가기</button></a></p>
 
 <ul>
-  <li><strong>node.js</strong>
-    <ul>
-      <li>000000</li>
-      <li>00:00 .00</li>
-      <li>시도: 0번</li>
-    </ul>
-  </li>
   <li><strong>C</strong>
     <ul>
       <li>200816</li>
@@ -248,13 +241,27 @@ if (!doNotTrack) {
   <li>BFS, DFS 문제</li>
   <li>BFS로 접근하여 해결!
     <ul>
-      <li>진행방향에 대해 모든 경우를 생각하지 못해 계속 틀림…</li>
-      <li>재귀함수 구현 연습하기</li>
+      <li>진행방향에 대해 모든 경우를 생각하지 못해 계속 틀림…
+        <ul>
+          <li>처음엔 오른쪽, 아래 방향만 고려</li>
+          <li>이렇게 짜면 <code class="language-plaintext highlighter-rouge">⏌</code>자 모양을 2개로 인식 → 왼쪽도 추가</li>
+          <li>위쪽을 고려 안하면 <code class="language-plaintext highlighter-rouge">⨆</code>자 모양을 2개로 인식 → 위쪽도 추가</li>
+        </ul>
+      </li>
+      <li>재귀함수 구현 연습하기
+        <ul>
+          <li>초반에 호출 시 리턴을 설정해주어 제대로 동작 안함.. → 재귀함수 겁먹지 말기!</li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
 
 <h3 id="참고">참고</h3>
+<ul>
+  <li><strong>DFS와 BFS</strong><br /><img src="./img.jpg" width="500px" /><br /><a href="https://ebbnflow.tistory.com/173">원본링크 - ebb and flow</a></li>
+  <li><a href="https://uhug.github.io/docs/1260">[1260] DFS와 BFS</a></li>
+</ul>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
