@@ -84,8 +84,7 @@ for(var i=0; i<list.length; i++){
 }
 
 // 항상 커밋을 할 수 있도록 파일 내용을 바꾸어 줌
-fs.writeFileSync(rootPath+"dummy", Date.now())
+fs.writeFileSync(rootPath+"dummy", Date.now().toString())
 console.log()
 console.log(list.length + " files was successfully moved to ./_post/ ")
 console.log("All process was done! Happy coding!")
-
