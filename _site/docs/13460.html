@@ -236,8 +236,15 @@ if (!doNotTrack) {
   </li>
   <li><strong>Python3 (code2.py)</strong>
     <ul>
+      <li>220413</li>
+      <li>1:17:26 .67</li>
+      <li>시도: 4번 (실패)</li>
+    </ul>
+  </li>
+  <li><strong>Python3 (code3.py)</strong>
+    <ul>
       <li>000000</li>
-      <li>00:00 .00</li>
+      <li>0:00:00 .00</li>
       <li>시도: 0번</li>
     </ul>
   </li>
@@ -251,11 +258,39 @@ if (!doNotTrack) {
       <li>구현 문제의 경우, <strong>구현 조건을 잘 보이는 곳에 써두자!!</strong></li>
     </ul>
   </li>
-  <li><strong>최소</strong>값을 찾아야 하므로 BFS로 풀어야 한다…ㅠㅜ</li>
-  <li><code class="language-plaintext highlighter-rouge">code1.py</code> -&gt; DFS 풀이 / 시간초과</li>
+  <li><strong>code1.py</strong>
+    <ul>
+      <li><strong>최소</strong>값을 찾아야 하므로 BFS로 풀어야 한다…ㅠㅜ</li>
+      <li><code class="language-plaintext highlighter-rouge">code1.py</code> -&gt; DFS 풀이 / 시간초과</li>
+    </ul>
+  </li>
+  <li><strong>code2.py</strong>
+    <ul>
+      <li>BFS로 풀긴 풀었으나.. 각 노드 상태저장을 보드판 그대로를 deepcopy해서 풀음</li>
+      <li>또 시간초과…</li>
+      <li>보드판 전체가 아닌, 공의 위치만을 고려해서 풀어내는 방법을 사용해야 할 듯!</li>
+      <li>위로 움직였으면, 다음 턴에 아래로 움직일 필요없음 / 오른쪽으로 움직였으면 다음 턴에 왼쪽으로 갈 이유 없음
+        <ul>
+          <li>추가해도 시간초과…</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>code3.py</strong>
+    <ul>
+      <li>위치만 가지고 풀면 좀 나아지려나…</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="참고">참고</h3>
+<ul>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import copy
+aa = copy.deepcopy(target)
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
