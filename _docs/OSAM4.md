@@ -12,6 +12,9 @@ feedback: true
 
 <a href="https://github.com/DokySp/acmicpc-practice/tree/master/OSAM4"><button class="btn btn-info">코드 보러가기</button></a>
 
+ - tags: 문자열, 구현, 배열
+ - lev: b2
+
 - C
   - 200614
   - 28.27 .16
